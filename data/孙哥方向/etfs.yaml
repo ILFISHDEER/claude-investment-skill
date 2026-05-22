@@ -1,0 +1,136 @@
+# 科创板股票对应的ETF/基金备选
+# 用于没有科创板权限的投资者作为替代方案
+# 结构: 股票代码 -> { etfs: [ETF列表], funds: [基金列表], rationale: "替代逻辑" }
+
+# 存储方向
+storage:
+  # 中微公司 688012.SS - 刻蚀设备
+  "688012.SS":
+    etfs:
+      - name: "芯片ETF"
+        code: "159995.SZ"
+        weight: "约8%"
+        notes: "中微是第4大成分股"
+      - name: "半导体ETF"
+        code: "512480.SS"
+        weight: "约6%"
+        notes: "前十大成分股"
+      - name: "科创芯片ETF"
+        code: "588200.SS"
+        weight: "约10%"
+        notes: "科创芯片指数，中微权重高"
+    funds:
+      - name: "诺安成长混合"
+        code: "320007"
+        manager: "蔡嵩松→刘慧影"
+        notes: "重仓半导体设备"
+      - name: "银河创新成长混合"
+        code: "519674"
+        manager: "郑巍山"
+        notes: "聚焦半导体产业链"
+    rationale: "ETF权重约6-10%，能部分捕捉中微涨幅；主动基金有更灵活的配置"
+
+  # 拓荆科技 688072.SS - 薄膜沉积设备
+  "688072.SS":
+    etfs:
+      - name: "科创芯片ETF"
+        code: "588200.SS"
+        weight: "约5%"
+        notes: "拓荆是重要成分股"
+      - name: "半导体设备ETF"
+        code: "159516.SZ"
+        weight: "约7%"
+        notes: "设备主题ETF，拓荆是核心持仓"
+    funds:
+      - name: "嘉实上证科创板芯片ETF联接"
+        code: "017470"
+        notes: "跟踪科创芯片指数"
+    rationale: "拓荆是薄膜沉积设备龙头，通过科创芯片ETF或设备主题ETF间接持有"
+
+# 具身智能方向
+embodied_ai:
+  # 绿的谐波 688017.SS - 谐波减速器
+  "688017.SS":
+    etfs:
+      - name: "机器人ETF"
+        code: "159770.SZ"
+        weight: "约5%"
+        notes: "绿的谐波是机器人核心零部件"
+      - name: "工业母机ETF"
+        code: "159667.SZ"
+        weight: "约4%"
+        notes: "精密传动部件"
+      - name: "高端制造ETF"
+        code: "562910.SS"
+        weight: "约3%"
+        notes: "制造业升级主题"
+    funds:
+      - name: "华夏高端制造混合"
+        code: "002345"
+        notes: "机器人产业链布局"
+    rationale: "绿的谐波是A股唯一谐波减速器上市公司，机器人ETF是最直接替代"
+
+# 量子计算方向
+quantum:
+  # 国盾量子 688027.SS - 量子通信设备
+  "688027.SS":
+    etfs:
+      - name: "科创信息ETF"
+        code: "588100.SS"
+        weight: "约3%"
+        notes: "量子信息相关"
+      - name: "信息安全ETF"
+        code: "159613.SZ"
+        weight: "约2%"
+        notes: "量子通信属于信息安全"
+    funds:
+      - name: "银华中证信息安全指数分级"
+        code: "161630"
+        notes: "信息安全主题"
+    rationale: "国盾量子市值较小，ETF权重低，替代效果有限，需谨慎"
+
+# 科创板综合ETF（作为整体替代方案）
+board_alternatives:
+  "科创板整体":
+    etfs:
+      - name: "科创50ETF"
+        code: "588000.SS"
+        notes: "跟踪科创50指数，中芯国际、金山办公等龙头"
+      - name: "科创100ETF"
+        code: "588190.SS"
+        notes: "跟踪科创100，中小盘科技创新"
+      - name: "科创芯片ETF"
+        code: "588200.SS"
+        notes: "专注科创板芯片公司"
+      - name: "科创材料ETF"
+        code: "588160.SS"
+        notes: "科创板新材料"
+    funds:
+      - name: "科创主题基金"
+        code: "506000"
+        notes: "首批科创主题基金"
+    rationale: "没有权限买科创板个股时，通过宽基ETF或主题ETF间接配置"
+
+# ETF选择优先级建议
+selection_guide:
+  原则: |
+    1. 优先选择与目标股票同行业/同主题的ETF
+    2. 查看ETF持仓，确认目标股票在成分股中的权重
+    3. 权重越高，替代效果越好
+    4. 如果单只股票权重<3%，替代效果可能不理想
+    5. 可以考虑组合多只ETF来提高覆盖率
+
+  检查清单:
+    - "查看ETF最新的持仓明细"
+    - "确认目标股票在成分股中的排名"
+    - "计算目标股票占ETF净值的比例"
+    - "评估ETF的流动性和规模"
+    - "对比不同ETF的管理费率和跟踪误差"
+
+# 风险提示
+warnings:
+  - "ETF包含多只股票，无法完全复制单只股票的表现"
+  - "如果目标股票暴涨但其他成分股下跌，ETF可能不涨甚至下跌"
+  - "科创板ETF也有涨跌幅限制（20%），波动较大"
+  - "ETF存在跟踪误差，长期可能跑输指数"
+  - "建议作为'次优选择'，而非'完全替代'"

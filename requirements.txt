@@ -1,0 +1,15 @@
+# Investment Skill 依赖包
+# 安装命令: pip install -r requirements.txt
+
+# 数据抓取
+yfinance>=0.2.28
+
+# YAML处理
+pyyaml>=6.0
+
+# 可选：A股数据（如果雅虎财经覆盖不全）
+# akshare>=1.11.0
+
+# 可选：数据可视化
+# matplotlib>=3.7.0
+# pandas>=2.0.0

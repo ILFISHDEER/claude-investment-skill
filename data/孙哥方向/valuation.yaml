@@ -1,0 +1,294 @@
+# 估值数据
+# 自动生成时间：2026-05-15 20:31:36
+# 数据源：Yahoo Finance
+# 下次更新：2026-05-22
+
+valuation:
+  SNDK:
+    pe: 47.17571
+    ps: 15.531453
+    ev_ebitda: 35.731
+    market_cap: 2047.67
+    current_price: 1382.72
+    yoy_return: 3310.75
+    notes: 自动更新于 2026-05-15
+  MU:
+    pe: 36.62152
+    ps: 15.057604
+    ev_ebitda: 23.676
+    market_cap: 8751.33
+    current_price: 776.01
+    yoy_return: 714.95
+    notes: 自动更新于 2026-05-15
+  005930.KS:
+    pe: null
+    ps: 4.573193
+    ev_ebitda: 13.119
+    market_cap: 13663.5
+    current_price: 270500.0
+    yoy_return: 380.4
+    notes: 自动更新于 2026-05-15
+  000660.KS:
+    pe: null
+    ps: 9.775819
+    ev_ebitda: 14.784
+    market_cap: 9932.51
+    current_price: 1819000.0
+    yoy_return: 812.52
+    notes: 自动更新于 2026-05-15
+  AMAT:
+    pe: 45.232033
+    ps: 12.392173
+    ev_ebitda: 39.185
+    market_cap: 3496.33
+    current_price: 440.56
+    yoy_return: 154.36
+    notes: 自动更新于 2026-05-15
+  LRCX:
+    pe: 56.550095
+    ps: 17.254452
+    ev_ebitda: 47.541
+    market_cap: 3741.08
+    current_price: 299.15
+    yoy_return: 255.4
+    notes: 自动更新于 2026-05-15
+  KLAC:
+    pe: 53.472878
+    ps: 18.880388
+    ev_ebitda: 42.47
+    market_cap: 2472.7
+    current_price: 1892.94
+    yoy_return: 136.64
+    notes: 自动更新于 2026-05-15
+  002371.SZ:
+    pe: 77.083336
+    ps: 10.347274
+    ev_ebitda: 56.085
+    market_cap: 4291.01
+    current_price: 592.0
+    yoy_return: 86.79
+    notes: 自动更新于 2026-05-15
+  688012.SS:
+    pe: 99.74654
+    ps: 20.675419
+    ev_ebitda: 135.715
+    market_cap: 2713.93
+    current_price: 432.9
+    yoy_return: 137.32
+    notes: 自动更新于 2026-05-15
+  688072.SS:
+    pe: 91.05498
+    ps: 21.640062
+    ev_ebitda: 116.066
+    market_cap: 1498.1
+    current_price: 529.94
+    yoy_return: 247.74
+    notes: 自动更新于 2026-05-15
+  300346.SZ:
+    pe: 113.08
+    ps: 14.917085
+    ev_ebitda: 47.428
+    market_cap: 390.78
+    current_price: 56.54
+    yoy_return: 81.67
+    notes: 自动更新于 2026-05-15
+  TSLA:
+    pe: 399.36935
+    ps: 17.009903
+    ev_ebitda: 147.534
+    market_cap: 16649.12
+    current_price: 443.3
+    yoy_return: 29.31
+    notes: 自动更新于 2026-05-15
+  NVDA:
+    pe: 48.110203
+    ps: 26.4416
+    ev_ebitda: 42.613
+    market_cap: 57097.46
+    current_price: 235.74
+    yoy_return: 74.88
+    notes: 自动更新于 2026-05-15
+  688017.SS:
+    pe: 396.75327
+    ps: 91.39253
+    ev_ebitda: 282.794
+    market_cap: 560.07
+    current_price: 305.5
+    yoy_return: 118.36
+    notes: 自动更新于 2026-05-15
+  002472.SZ:
+    pe: 28.333334
+    ps: 3.950851
+    ev_ebitda: 15.28
+    market_cap: 361.22
+    current_price: 42.5
+    yoy_return: 24.27
+    notes: 自动更新于 2026-05-15
+  601100.SS:
+    pe: 56.04831
+    ps: 13.263309
+    ev_ebitda: 39.018
+    market_cap: 1555.62
+    current_price: 116.02
+    yoy_return: 60.29
+    notes: 自动更新于 2026-05-15
+  603728.SS:
+    pe: 406.1875
+    ps: 9.856405
+    ev_ebitda: 148.503
+    market_cap: 272.23
+    current_price: 64.99
+    yoy_return: 4.77
+    notes: 自动更新于 2026-05-15
+  002050.SZ:
+    pe: 51.544556
+    ps: 7.0404377
+    ev_ebitda: 31.479
+    market_cap: 2190.69
+    current_price: 52.06
+    yoy_return: 97.17
+    notes: 自动更新于 2026-05-15
+  601689.SS:
+    pe: 43.70625
+    ps: 3.9920712
+    ev_ebitda: 22.321
+    market_cap: 1215.27
+    current_price: 69.93
+    yoy_return: 37.43
+    notes: 自动更新于 2026-05-15
+  603662.SS:
+    pe: 58.73394
+    ps: 11.232853
+    ev_ebitda: 38.313
+    market_cap: 179.79
+    current_price: 64.02
+    yoy_return: -4.13
+    notes: 自动更新于 2026-05-15
+  603893.SS:
+    pe: 62.894547
+    ps: 15.418521
+    ev_ebitda: 54.503
+    market_cap: 728.15
+    current_price: 172.96
+    yoy_return: 7.12
+    notes: 自动更新于 2026-05-15
+  AVAV:
+    pe: null
+    ps: 5.1938205
+    ev_ebitda: 55.931
+    market_cap: 83.64
+    current_price: 165.27
+    yoy_return: -0.13
+    notes: 自动更新于 2026-05-15
+  KTOS:
+    pe: 322.64703
+    ps: 7.2678566
+    ev_ebitda: 110.918
+    market_cap: 102.85
+    current_price: 54.85
+    yoy_return: 59.49
+    notes: 自动更新于 2026-05-15
+  002389.SZ:
+    pe: 133.0
+    ps: 7.0127764
+    ev_ebitda: 60.829
+    market_cap: 209.59
+    current_price: 21.28
+    yoy_return: 7.7
+    notes: 自动更新于 2026-05-15
+  688297.SS:
+    pe: 345.46155
+    ps: 9.03721
+    ev_ebitda: 1259.428
+    market_cap: 303.14
+    current_price: 44.91
+    yoy_return: 1.17
+    notes: 自动更新于 2026-05-15
+  AAPL:
+    pe: 36.102905
+    ps: 9.702058
+    ev_ebitda: 27.48
+    market_cap: 43799.16
+    current_price: 298.21
+    yoy_return: 41.59
+    notes: 自动更新于 2026-05-15
+  GOOGL:
+    pe: 30.592678
+    ps: 11.500979
+    ev_ebitda: 29.931
+    market_cap: 48591.41
+    current_price: 401.07
+    yoy_return: 145.46
+    notes: 自动更新于 2026-05-15
+  QCOM:
+    pe: 21.513979
+    ps: 4.740465
+    ev_ebitda: 16.644
+    market_cap: 2108.84
+    current_price: 200.08
+    yoy_return: 34.18
+    notes: 自动更新于 2026-05-15
+  RKLB:
+    pe: null
+    ps: 112.88394
+    ev_ebitda: -457.855
+    market_cap: 767.13
+    current_price: 132.55
+    yoy_return: 425.57
+    notes: 自动更新于 2026-05-15
+  600118.SS:
+    pe: 9582.0
+    ps: 18.070177
+    ev_ebitda: 5530.54
+    market_cap: 1133.06
+    current_price: 95.82
+    yoy_return: 263.08
+    notes: 自动更新于 2026-05-15
+  002151.SZ:
+    pe: null
+    ps: 8.692765
+    ev_ebitda: 848.374
+    market_cap: 218.14
+    current_price: 40.18
+    yoy_return: 52.95
+    notes: 自动更新于 2026-05-15
+  600879.SS:
+    pe: 330.42856
+    ps: 5.4861984
+    ev_ebitda: 104.424
+    market_cap: 763.13
+    current_price: 23.13
+    yoy_return: 158.45
+    notes: 自动更新于 2026-05-15
+  CEG:
+    pe: 23.914858
+    ps: 3.3287969
+    ev_ebitda: 15.252
+    market_cap: 994.21
+    current_price: 275.26
+    yoy_return: -2.72
+    notes: 自动更新于 2026-05-15
+  OKLO:
+    pe: null
+    ps: null
+    ev_ebitda: -55.128
+    market_cap: 116.94
+    current_price: 67.21
+    yoy_return: 79.66
+    notes: 自动更新于 2026-05-15
+  SMR:
+    pe: null
+    ps: 223.58112
+    ev_ebitda: -15.909
+    market_cap: 41.74
+    current_price: 12.06
+    yoy_return: -49.75
+    notes: 自动更新于 2026-05-15
+  CCJ:
+    pe: 103.220184
+    ps: 13.850671
+    ev_ebitda: 54.707
+    market_cap: 490.02
+    current_price: 112.51
+    yoy_return: 118.51
+    notes: 自动更新于 2026-05-15

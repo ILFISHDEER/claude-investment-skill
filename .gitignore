@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# Obsidian
+.obsidian/workspace.json
+.obsidian/graph.json
+
+# Output files (optional - uncomment if you don't want to track generated reports)
+# output/*.pdf
+# output/*.md
+
+# OS files
+.DS_Store
+Thumbs.db
+*.tmp
