@@ -10,9 +10,9 @@ __pycache__/
 .obsidian/workspace.json
 .obsidian/graph.json
 
-# Output files (optional - uncomment if you don't want to track generated reports)
-# output/*.pdf
-# output/*.md
+# Output files (generated reports, do not track)
+output/
+.agent_temp/
 
 # OS files
 .DS_Store
