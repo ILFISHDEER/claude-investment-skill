@@ -1,0 +1,75 @@
+# 合成生物学主题 — 催化剂日历
+# 未来6-12个月关键事件
+
+meta:
+  theme: "合成生物学"
+  last_updated: "2026-05-25"
+
+# === 财报季 ===
+earnings:
+  - date: "2026-08-05"
+    ticker: "TWST"
+    event: "FY2026 Q3 财报"
+    impact: "中"
+    note: "关注DNA合成订单增长"
+
+  - date: "2026-08-12"
+    ticker: "ILMN"
+    event: "FY2026 Q2 财报"
+    impact: "高"
+    note: "测序仪出货量、NovaSeq X adoption"
+
+  - date: "2026-11-03"
+    ticker: "DNA"
+    event: "FY2026 Q3 财报"
+    impact: "高"
+    note: "Foundry产能利用率、新客户签约"
+
+# === 管线/产品里程碑 ===
+pipeline:
+  - date: "2026-07"
+    ticker: "MRNA"
+    event: "mRNA癌症疫苗关键临床数据读出"
+    impact: "高"
+    note: "若阳性将重塑mRNA应用天花板"
+
+  - date: "2026-09"
+    ticker: "NTLA"
+    event: "NTLA-2001 ATTR淀粉样变性III期入组完成"
+    impact: "高"
+    note: "体内CRISPR首个大规模III期"
+
+  - date: "2026-Q4"
+    ticker: "688065.SS"
+    event: "凯赛生物基聚酰胺新产能投产"
+    impact: "中"
+    note: "关注产能爬坡和下游客户验证"
+
+# === 政策/行业事件 ===
+policy:
+  - date: "2026-06"
+    event: "中国《生物经济发展规划》中期评估"
+    impact: "中"
+    note: "可能释放合成生物学专项补贴信号"
+
+  - date: "2026-10"
+    event: "FDA合成生物学产品监管指南更新"
+    impact: "高"
+    note: "影响终端产品审批路径和时间"
+
+  - date: "2026-11"
+    event: "COP31气候大会"
+    impact: "中"
+    note: "生物基材料替代化石基可能纳入碳核算"
+
+# === 会议/行业活动 ===
+conferences:
+  - date: "2026-06-15"
+    event: "SynBioBeta 2026 全球大会"
+    impact: "中"
+    note: "行业风向标，关注M&A和融资动态"
+
+  - date: "2026-09-20"
+    event: "欧洲工业生物技术大会(ECAB)"
+    impact: "低"
+    note: "Novonesis、Evonik技术发布"

@@ -1,0 +1,256 @@
+# 合成生物学主题 — 股票清单
+# 覆盖美股/港股/A股/欧洲，含未上市初创公司
+
+meta:
+  theme: "合成生物学"
+  last_updated: "2026-05-25"
+  market_focus: "全球"
+
+# === 美股 ===
+美股:
+  - code: "TWST"
+    name: "Twist Bioscience"
+    layer: "基因合成与测序"
+    description: "DNA合成龙头，高通量硅基合成平台"
+    market: "NASDAQ"
+    tags: ["铲子股", "基因合成", "硅基芯片"]
+
+  - code: "DNA"
+    name: "Ginkgo Bioworks"
+    layer: "菌株与酶工程"
+    description: "细胞编程平台，Foundry模式"
+    market: "NYSE"
+    tags: ["平台型", "细胞工程", "亏损"]
+
+  - code: "ILMN"
+    name: "Illumina"
+    layer: "基因合成与测序"
+    description: "基因测序仪垄断者，占据全球70%+份额"
+    market: "NASDAQ"
+    tags: ["铲子股", "测序仪", "寡头"]
+
+  - code: "TXG"
+    name: "10x Genomics"
+    layer: "分析与检测"
+    description: "单细胞分析平台"
+    market: "NASDAQ"
+    tags: ["分析工具", "单细胞"]
+
+  - code: "CDXS"
+    name: "Codexis"
+    layer: "菌株与酶工程"
+    description: "酶定向进化技术平台"
+    market: "NASDAQ"
+    tags: ["酶工程", "制药"]
+
+  - code: "SANA"
+    name: "Sana Biotechnology"
+    layer: "菌株与酶工程"
+    description: "细胞工程平台，基因修饰细胞疗法"
+    market: "NASDAQ"
+    tags: ["细胞治疗", "未盈利"]
+
+  - code: "NTLA"
+    name: "Intellia Therapeutics"
+    layer: "菌株与酶工程"
+    description: "CRISPR基因编辑体内疗法"
+    market: "NASDAQ"
+    tags: ["基因编辑", "CRISPR"]
+
+  - code: "MRNA"
+    name: "Moderna"
+    layer: "终端应用"
+    description: "mRNA疫苗/疗法龙头"
+    market: "NASDAQ"
+    tags: ["mRNA", "疫苗", "大市值"]
+
+  - code: "BNTX"
+    name: "BioNTech"
+    layer: "终端应用"
+    description: "mRNA+细胞治疗双管线"
+    market: "NASDAQ"
+    tags: ["mRNA", "德国", "疫苗"]
+
+  - code: "RXRX"
+    name: "Recursion Pharmaceuticals"
+    layer: "分析与检测"
+    description: "AI+细胞成像药物发现"
+    market: "NASDAQ"
+    tags: ["AI制药", "生物技术"]
+
+  # 未上市
+  - code: "未上市"
+    name: "Benchling"
+    layer: "菌株与酶工程"
+    description: "生命科学软件平台，ELN+LIMS+分子生物学工具"
+    market: "未上市"
+    tags: ["软件", "SaaS", "独角兽"]
+
+  - code: "未上市"
+    name: "Antheia"
+    layer: "终端应用"
+    description: "生物合成药物分子，酵母细胞工厂"
+    market: "未上市"
+    tags: ["生物制药", "酵母"]
+
+  - code: "未上市"
+    name: "Pivot Bio"
+    layer: "终端应用"
+    description: "微生物固氮，替代化肥"
+    market: "未上市"
+    tags: ["农业", "可持续", "气候科技"]
+
+# === 港股 ===
+港股:
+  - code: "2269.HK"
+    name: "药明生物"
+    layer: "CDMO与平台"
+    description: "全球第二大生物药CDMO"
+    market: "HKEX"
+    tags: ["CDMO", "大市值", "地缘政治风险"]
+
+  - code: "1548.HK"
+    name: "金斯瑞生物"
+    layer: "基因合成与测序"
+    description: "基因合成全球龙头，子公司传奇生物(CAR-T)"
+    market: "HKEX"
+    tags: ["基因合成", "CAR-T", "子公司分拆"]
+
+  - code: "3759.HK"
+    name: "康龙化成"
+    layer: "CDMO与平台"
+    description: "CRO+CDMO一体化"
+    market: "HKEX"
+    tags: ["CRO", "CDMO"]
+
+  - code: "2155.HK"
+    name: "森松国际"
+    layer: "生物反应器与发酵"
+    description: "生物反应器、制药装备"
+    market: "HKEX"
+    tags: ["设备", "制药装备"]
+
+# === A股 ===
+A股:
+  - code: "688114.SS"
+    name: "华大智造"
+    layer: "基因合成与测序"
+    description: "国产基因测序仪龙头，打破Illumina垄断"
+    market: "科创板"
+    tags: ["国产替代", "测序仪", "⚠️科创板"]
+
+  - code: "688690.SS"
+    name: "纳微科技"
+    layer: "分离纯化"
+    description: "高性能纳米微球/层析填料"
+    market: "科创板"
+    tags: ["层析填料", "国产替代", "⚠️科创板"]
+
+  - code: "300171.SZ"
+    name: "东富龙"
+    layer: "生物反应器与发酵"
+    description: "生物反应器、冻干机、制药装备"
+    market: "创业板"
+    tags: ["设备", "发酵罐"]
+
+  - code: "300358.SZ"
+    name: "楚天科技"
+    layer: "生物反应器与发酵"
+    description: "制药装备整体解决方案"
+    market: "创业板"
+    tags: ["设备", "制药装备"]
+
+  - code: "688639.SS"
+    name: "华恒生物"
+    layer: "终端应用"
+    description: "丙氨酸等氨基酸全球龙头，合成生物学产品"
+    market: "科创板"
+    tags: ["产品型", "氨基酸", "盈利", "⚠️科创板"]
+
+  - code: "688065.SS"
+    name: "凯赛生物"
+    layer: "终端应用"
+    description: "生物基聚酰胺(生物基尼龙)，长链二元酸"
+    market: "科创板"
+    tags: ["产品型", "材料", "⚠️科创板"]
+
+  - code: "600873.SS"
+    name: "梅花生物"
+    layer: "终端应用"
+    description: "氨基酸全球龙头(味精/赖氨酸/苏氨酸)"
+    market: "主板"
+    tags: ["产品型", "大宗品", "高盈利"]
+
+  - code: "301301.SZ"
+    name: "川宁生物"
+    layer: "终端应用"
+    description: "抗生素中间体龙头，布局合成生物学"
+    market: "创业板"
+    tags: ["产品型", "原料药", "转型"]
+
+  - code: "603739.SS"
+    name: "蔚蓝生物"
+    layer: "菌株与酶工程"
+    description: "酶制剂、微生态制剂"
+    market: "主板"
+    tags: ["酶制剂", "饲料添加剂"]
+
+  - code: "688089.SS"
+    name: "嘉必优"
+    layer: "终端应用"
+    description: "ARA/DHA等营养素"
+    market: "科创板"
+    tags: ["产品型", "营养素", "⚠️科创板"]
+
+  - code: "300487.SZ"
+    name: "蓝晓科技"
+    layer: "分离纯化"
+    description: "吸附分离材料(层析介质、离子交换树脂)"
+    market: "创业板"
+    tags: ["层析介质", "多领域应用"]
+
+# === 欧洲 ===
+欧洲:
+  - code: "SART.DE"
+    name: "Sartorius"
+    layer: "生物反应器与发酵"
+    description: "德国生物工艺设备+过滤龙头"
+    market: "XETRA"
+    tags: ["设备", "过滤", "生物工艺"]
+
+  - code: "MRK.DE"
+    name: "Merck KGaA"
+    layer: "分析与检测"
+    description: "德国默克，生命科学试剂+分析工具"
+    market: "XETRA"
+    tags: ["试剂", "分析", "大市值"]
+
+  - code: "NZYM-B.CO"
+    name: "Novonesis"
+    layer: "菌株与酶工程"
+    description: "原Novozymes，全球最大工业酶公司"
+    market: "Copenhagen"
+    tags: ["工业酶", "酶制剂巨头", "丹麦"]
+
+  - code: "DSM.AS"
+    name: "DSM-Firmenich"
+    layer: "终端应用"
+    description: "荷兰营养素/香精/生物基材料"
+    market: "Euronext"
+    tags: ["营养素", "香精", "生物基"]
+
+  - code: "EVK.DE"
+    name: "Evonik"
+    layer: "终端应用"
+    description: "德国特种化工，生物基材料布局"
+    market: "XETRA"
+    tags: [ "特种化工", "生物基材料" ]
+
+# === 汇总统计 ===
+summary:
+  total: 32
+  美股: 12
+  港股: 4
+  A股: 11
+  欧洲: 5
+  未上市: 3

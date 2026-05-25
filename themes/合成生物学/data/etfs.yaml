@@ -1,0 +1,72 @@
+# 合成生物学主题 — ETF备选
+# 无科创板权限时通过ETF间接配置
+
+meta:
+  theme: "合成生物学"
+  last_updated: "2026-05-25"
+
+# === 合成生物学/生物科技ETF ===
+etfs:
+  - code: "XBI"
+    name: "SPDR S&P Biotech ETF"
+    market: "NYSE"
+    exposure: "美股生科综合"
+    合成生物学权重: "~15-20%"
+    top_holdings: ["CRISPR", "Intellia", "Twist", "Ginkgo"]
+    替代效果: "⭐⭐⭐"
+
+  - code: "ARKG"
+    name: "ARK Genomic Revolution ETF"
+    market: "NYSE"
+    exposure: "基因组学/合成生物学"
+    合成生物学权重: "~25-30%"
+    top_holdings: ["Twist", "Ginkgo", "10x Genomics", "Intellia"]
+    替代效果: "⭐⭐⭐⭐"
+
+  - code: "IBB"
+    name: "iShares Nasdaq Biotechnology ETF"
+    market: "NASDAQ"
+    exposure: "纳斯达克生科大盘"
+    合成生物学权重: "~10%"
+    top_holdings: ["Amgen", "Gilead", "Moderna", "Illumina"]
+    替代效果: "⭐⭐"
+
+  - code: "513050.SS"
+    name: "易方达中证生物科技主题ETF"
+    market: "A股"
+    exposure: "A股生物科技"
+    合成生物学权重: "~20%"
+    top_holdings: ["药明康德", "恒瑞医药", "迈瑞医疗", "华大智造"]
+    替代效果: "⭐⭐⭐"
+
+# === 个股与ETF映射 ===
+mapping:
+  - ticker: "688114.SS"
+    name: "华大智造"
+    etf: "513050.SS"
+    weight_in_etf: "~8%"
+    note: "A股生物科技ETF含华大智造"
+
+  - ticker: "688690.SS"
+    name: "纳微科技"
+    etf: "无直接映射"
+    weight_in_etf: "—"
+    note: "纳微科技市值较小，主流ETF覆盖度低"
+
+  - ticker: "688639.SS"
+    name: "华恒生物"
+    etf: "无直接映射"
+    weight_in_etf: "—"
+    note: "华恒生物属化工/食品板块，生科ETF不含"
+
+  - ticker: "688065.SS"
+    name: "凯赛生物"
+    etf: "无直接映射"
+    weight_in_etf: "—"
+    note: "凯赛属新材料板块，建议直接配置"
+
+# === 配置建议 ===
+recommendation:
+  无美股权限: "通过 ARKG 或 XBI 间接配置 Twist/Ginkgo/10x Genomics"
+  无科创板权限: "科创板标的(华大智造/纳微科技/凯赛/华恒)可通过 513050.SS 部分覆盖，但权重低，建议直接开通或选主板标的(梅花生物/东富龙)"
+  全球配置: "美股40%(ARKG+XBI) + A股30%(主板+创业板) + 港股20%(药明生物+金斯瑞) + 欧洲10%(Sartorius/Novonesis)"

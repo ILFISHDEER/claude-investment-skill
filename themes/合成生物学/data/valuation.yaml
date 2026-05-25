@@ -1,0 +1,251 @@
+# 合成生物学主题 — 估值数据
+# 注：以下为占位数据，生成报告前需运行 update_data.py 更新
+
+meta:
+  theme: "合成生物学"
+  last_updated: "2026-05-25"
+  data_source: "手动填充/待更新"
+
+# === 美股 ===
+TWST:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+DNA:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+ILMN:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+TXG:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+CDXS:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+SANA:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+NTLA:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+MRNA:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+BNTX:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+RXRX:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+# === 港股 ===
+2269.HK:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+1548.HK:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+3759.HK:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+2155.HK:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+# === A股 (人民币/亿人民币) ===
+688114.SS:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "⚠️科创板，待更新"
+
+688690.SS:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "⚠️科创板，待更新"
+
+300171.SZ:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+300358.SZ:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+688639.SS:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "⚠️科创板，待更新"
+
+688065.SS:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "⚠️科创板，待更新"
+
+600873.SS:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+301301.SZ:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+603739.SS:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+688089.SS:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "⚠️科创板，待更新"
+
+300487.SZ:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+# === 欧洲 ===
+SART.DE:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+MRK.DE:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+NZYM-B.CO:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+DSM.AS:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"
+
+EVK.DE:
+  pe: null
+  ps: null
+  market_cap: null
+  price: null
+  yoy_return: null
+  note: "待更新"

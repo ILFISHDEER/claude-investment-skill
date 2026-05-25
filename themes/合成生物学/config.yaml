@@ -1,0 +1,110 @@
+# Investment Skill — 合成生物学主题配置
+# 合成生物学产业链全景分析与铲子股挖掘
+
+meta:
+  skill_version: "2.0"
+  generated_at: "2026-05-25"
+
+# === 报告主题 ===
+theme:
+  name: "合成生物学产业链分析"
+  id: "synthetic-biology"
+  description: "从基因合成、菌株工程、发酵设备到终端产品的全链条，覆盖美股/港股/A股/欧洲"
+
+# === 输出控制 ===
+output:
+  depth: "L2"           # L2=简报
+  style: "专业投行风"    # 专业严谨
+  market_focus: "全球"   # 美股/港股/A股/欧洲全覆盖
+
+# === 产业链层级定义（合成生物学七层）===
+industry_layers:
+  - name: "基因合成与测序"
+    id: "dna-synthesis"
+    description: "DNA/RNA合成、基因测序、基因编辑工具"
+    key_metrics: ["合成通量", "碱基准确率", "成本/碱基", "读长"]
+
+  - name: "菌株与酶工程"
+    id: "strain-engineering"
+    description: "底盘细胞设计、酶定向进化、代谢通路优化"
+    key_metrics: ["转化率", "产率", "菌种稳定性", "IP布局"]
+
+  - name: "生物反应器与发酵"
+    id: "bioreactor"
+    description: "生物反应器、发酵罐、培养基、过程控制"
+    key_metrics: ["反应器规模", "自动化程度", "能耗", "产能利用率"]
+
+  - name: "分离纯化"
+    id: "downstream"
+    description: "层析填料、膜过滤、萃取、结晶"
+    key_metrics: ["纯度", "回收率", "单位成本", "批间一致性"]
+
+  - name: "分析与检测"
+    id: "analytics"
+    description: "质谱、色谱、细胞分析、在线监测"
+    key_metrics: ["检测灵敏度", "通量", "法规合规性"]
+
+  - name: "CDMO与平台"
+    id: "cdmo-platform"
+    description: "合成生物学CDMO、软件平台、数据服务"
+    key_metrics: ["产能", "项目交付周期", "客户数量", "平台粘性"]
+
+  - name: "终端应用"
+    id: "applications"
+    description: "化工/医药/农业/食品/材料终端产品"
+    key_metrics: ["市场规模", "成本优势(vs传统化学法)", "商业化进度", "政策准入"]
+
+# === IC Score权重（合成生物学调整）===
+ic_score_weights:
+  I_irreplaceability: 30        # 菌种/酶IP独占性高
+  C_customer_concentration: 20  # B端大客户绑定重要
+  T_technology_barrier: 30      # 技术壁垒极高（know-how密集）
+  S_scale_effect: 15            # 规模效应中等（发酵放大是难点）
+  M_market_liquidity: 5         # 市值流动性
+
+# === 供应链层级定义 ===
+supply_chain_layers:
+  - "生物原料层"
+  - "核心试剂层"
+  - "设备仪器层"
+  - "工艺服务层"
+  - "终端产品层"
+
+# === 模块开关 ===
+modules:
+  enabled:
+    - "00-市场情绪分析"
+    - "01-市场环境扫描"
+    - "02-核心投资哲学"
+    - "03-产业链拆解"
+    - "14-深度核心逻辑摘要"
+    - "15-产业链全景图谱"
+    - "04-铲子股筛选"
+    - "05-护城河评估"
+    - "06-催化剂日历"
+    - "07-中美对比矩阵"
+    - "08-风险矩阵与对冲"
+    - "09-组合构建"
+    - "10-实操指南"
+    - "11-动态跟踪机制"
+    - "12-预测与实际对比"
+    - "13-ETF备选与核心逻辑"
+    - "16-供应链分析"
+
+# === 框架嵌入 ===
+frameworks:
+  - "二阶三阶思维"
+  - "晨星护城河评级"
+  - "费雪成长股原则"
+  - "ARK颠覆性创新时间线"
+  - "桥水压力测试"
+
+# === 数据路径 ===
+data_path: "themes/合成生物学/data/"
+
+# === 主题特定配置 ===
+theme_specific:
+  key_technology: ["CRISPR", "定向进化", "精密发酵", "无细胞合成"]
+  key_metrics: ["转化率", "产率", "成本下降曲线", "法规审批进度"]
+  policy_drivers: ["生物经济战略", "碳中和", "粮食安全", "原料药自主可控"]
+  geographic_focus: ["美国(技术领先)", "中国(制造+市场)", "欧洲(工业酶+法规)", "丹麦(发酵传统)"]
