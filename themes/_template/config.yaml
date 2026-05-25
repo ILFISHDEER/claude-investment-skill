@@ -1,0 +1,331 @@
+# 主题配置模板
+
+> **版本**: v1.0
+> **用途**: 创建新的投资主题配置
+
+---
+
+## 快速开始
+
+复制本模板，修改以下关键字段即可创建新主题。
+
+---
+
+## 配置结构
+
+```yaml
+# === 主题基本信息 ===
+meta:
+  skill_version: "2.0"
+  generated_at: "2026-05-24"
+
+# === 报告主题 ===
+theme:
+  name: "主题名称"
+  id: "theme-id"                    # 英文ID，用于文件路径
+  description: "主题描述"
+
+# === 产业链层级定义 ===
+# 每个主题有自己的"七层"定义
+industry_layers:
+  - name: "层级1名称"
+    id: "layer-1"
+    description: "层级描述"
+    key_metrics: ["关键指标1", "关键指标2"]
+
+  - name: "层级2名称"
+    id: "layer-2"
+    description: "层级描述"
+    key_metrics: ["关键指标1", "关键指标2"]
+
+  # ... 继续定义
+
+# === IC Score权重配置 ===
+# 不同主题的IC Score权重可以不同
+ic_score_weights:
+  I_irreplaceability: 30    # 不可替代性
+  C_customer_concentration: 25  # 客户集中度
+  T_technology_barrier: 25  # 技术壁垒
+  S_scale_effect: 15       # 规模效应
+  M_market_liquidity: 5    # 市值流动性
+
+# === 供应链层级定义 ===
+supply_chain_layers:
+  - "原材料层"
+  - "基础材料层"
+  - "核心器件层"
+  - "模组组件层"
+  - "系统集成层"
+  - "终端应用层"
+
+# === 模块开关 ===
+modules:
+  enabled:
+    - "00-市场情绪分析"
+    - "01-市场环境扫描"
+    - "02-核心投资哲学"
+    - "03-产业链拆解"
+    - "16-供应链分析"           # 可选，挖掘隐形冠军
+    - "15-产业链全景图谱"
+    - "04-铲子股筛选"
+    - "05-护城河评估"
+    - "06-催化剂日历"
+    - "07-中美对比矩阵"
+    - "08-风险矩阵与对冲"
+    - "09-组合构建"
+    - "10-实操指南"
+    - "11-动态跟踪机制"
+    - "12-预测与实际对比"
+    - "13-ETF备选与核心逻辑"
+    - "14-深度核心逻辑摘要"
+
+# === 框架嵌入 ===
+frameworks:
+  - "二阶三阶思维"
+  - "晨星护城河评级"
+  - "费雪成长股原则"
+
+# === 数据路径 ===
+data_path: "data/{theme-id}/"
+
+# === 主题特定配置 ===
+theme_specific:
+  # 新能源示例
+  key_materials: ["锂", "钴", "镍", "稀土"]
+  key_metrics: ["能量密度", "循环寿命", "成本下降曲线"]
+  policy_drivers: ["双碳目标", "补贴政策", "储能要求"]
+
+  # 量子计算示例
+  # key_technology: ["超导", "离子阱", "光量子", "硅量子"]
+  # key_metrics: ["量子比特数", "相干时间", "错误率"]
+  # milestones: ["量子优越性", "量子纠错", "实用化"]
+```
+
+---
+
+## 主题示例
+
+### 示例1: 新能源
+
+```yaml
+theme:
+  name: "新能源产业链全景分析"
+  id: "new-energy"
+  description: "锂电池、储能、光伏、氢能等新能源产业链"
+
+industry_layers:
+  - name: "原材料"
+    id: "materials"
+    description: "锂/钴/镍/稀土等矿产资源"
+    key_metrics: ["储量", "开采成本", "回收率"]
+
+  - name: "电池材料"
+    id: "battery-materials"
+    description: "正极/负极/隔膜/电解液"
+    key_metrics: ["能量密度", "循环寿命", "成本"]
+
+  - name: "电芯制造"
+    id: "cell-manufacturing"
+    description: "动力电池/储能电池"
+    key_metrics: ["产能", "良品率", "能量密度"]
+
+  - name: "电池Pack"
+    id: "battery-pack"
+    description: "模组/Pack/热管理"
+    key_metrics: ["成组效率", "安全性", "成本"]
+
+  - name: "BMS/热管理"
+    id: "bms-thermal"
+    description: "电池管理系统/热管理"
+    key_metrics: ["SOC精度", "热失控防护"]
+
+  - name: "系统集成"
+    id: "integration"
+    description: "储能系统/整车集成"
+    key_metrics: ["系统效率", "循环次数", "成本"]
+
+  - name: "应用终端"
+    id: "applications"
+    description: "电动车/储能/消费电子"
+    key_metrics: ["续航里程", "充电速度", "渗透率"]
+
+ic_score_weights:
+  I_irreplaceability: 30
+  C_customer_concentration: 20    # 新能源客户相对分散
+  T_technology_barrier: 25
+  S_scale_effect: 20              # 新能源规模效应更重要
+  M_market_liquidity: 5
+theme_specific:
+  key_materials: ["锂", "钴", "镍", "石墨", "稀土"]
+  cost_curve: "$/kWh下降趋势"
+  policy_drivers: ["双碳目标", "储能配比要求", "新能源补贴"]
+```
+
+### 示例2: 量子计算
+
+```yaml
+theme:
+  name: "量子计算产业链分析"
+  id: "quantum-computing"
+  description: "量子计算硬件、软件、应用产业链"
+
+industry_layers:
+  - name: "量子比特技术"
+    id: "qubit-tech"
+    description: "超导/离子阱/光量子/硅量子"
+    key_metrics: ["量子比特数", "相干时间", "门保真度"]
+
+  - name: "量子控制"
+    id: "quantum-control"
+    description: "控制电子学/低温系统/微波"
+    key_metrics: ["控制精度", "低温要求", "扩展性"]
+
+  - name: "量子纠错"
+    id: "quantum-error-correction"
+    description: "纠错码/逻辑量子比特"
+    key_metrics: ["逻辑错误率", "物理比特开销"]
+
+  - name: "量子软件"
+    id: "quantum-software"
+    description: "编译器/算法/开发工具"
+    key_metrics: ["算法效率", "开发者生态"]
+
+  - name: "量子云平台"
+    id: "quantum-cloud"
+    description: "量子计算云服务"
+    key_metrics: ["可用量子比特", "任务队列", "用户数量"]
+
+  - name: "量子应用"
+    id: "quantum-applications"
+    description: "材料模拟/优化/密码学/AI"
+    key_metrics: ["量子优势", "商业价值"]
+
+ic_score_weights:
+  I_irreplaceability: 35          # 量子计算技术独占性更重要
+  C_customer_concentration: 20
+  T_technology_barrier: 30        # 技术壁垒极高
+  S_scale_effect: 10              # 规模效应相对不重要
+  M_market_liquidity: 5
+theme_specific:
+  key_technology: ["超导", "离子阱", "光量子", "硅量子", "中性原子"]
+  milestones: ["量子优越性", "量子纠错", "容错量子计算", "实用化"]
+  key_metrics: ["量子比特数", "相干时间", "双量子比特门错误率"]
+```
+
+### 示例3: 生物医药
+
+```yaml
+theme:
+  name: "生物医药产业链分析"
+  id: "biotech"
+  description: "创新药、CXO、医疗器械、基因治疗"
+
+industry_layers:
+  - name: "靶点发现"
+    id: "target-discovery"
+    description: "基础研究/靶点验证"
+    key_metrics: ["靶点成药性", "专利布局"]
+
+  - name: "药物发现"
+    id: "drug-discovery"
+    description: "先导化合物/优化"
+    key_metrics: ["活性", "选择性", "成药性"]
+
+  - name: "CMC"
+    id: "cmc"
+    description: "工艺开发/生产"
+    key_metrics: ["产量", "纯度", "成本"]
+
+  - name: "临床前"
+    id: "preclinical"
+    description: "药效/毒理/PKPD"
+    key_metrics: ["有效性", "安全性", "剂量"]
+
+  - name: "临床试验"
+    id: "clinical-trials"
+    description: "I/II/III期临床"
+    key_metrics: ["入组速度", "ORR", "PFS", "OS"]
+
+  - name: "商业化"
+    id: "commercialization"
+    description: "生产/销售/准入"
+    key_metrics: ["产能", "销售能力", "医保谈判"]
+
+ic_score_weights:
+  I_irreplaceability: 25
+  C_customer_concentration: 15    # 医药客户分散
+  T_technology_barrier: 30        # 专利壁垒高
+  S_scale_effect: 20
+  M_market_liquidity: 10           # 医药流动性重要
+
+theme_specific:
+  therapeutic_areas: ["肿瘤", "自免", "CNS", "罕见病"]
+  modalities: ["小分子", "抗体", "细胞治疗", "基因治疗", "核酸药"]
+  key_metrics: ["研发管线", "临床阶段", "峰值销售预测"]
+```
+
+---
+
+## 主题切换指南
+
+### 1. 创建主题目录
+
+```bash
+mkdir -p data/新能源/
+cp data/孙哥方向/* data/新能源/
+# 修改tickers.yaml为新能源相关股票
+```
+
+### 2. 创建主题配置
+
+```bash
+cp config-theme-template.yaml config-新能源.yaml
+# 按新能源修改配置
+```
+
+### 3. 运行主题分析
+
+```bash
+python multi_agent_orchestrator.py --config config-新能源.yaml --parallel
+```
+
+---
+
+## 关键设计原则
+
+### 1. 层级可配置
+每个主题的"七层"定义不同：
+- 孙哥方向：AI Brain → Compute → Sensors → Actuators → Materials → Integration → Industrial
+- 新能源：原材料 → 电池材料 → 电芯制造 → Pack → BMS → 系统集成 → 应用
+- 量子计算：量子比特 → 控制 → 纠错 → 软件 → 云平台 → 应用
+
+### 2. IC Score权重可调
+不同行业权重不同：
+- 科技行业：技术壁垒权重高(30%)
+- 制造业：规模效应权重高(20%)
+- 医药行业：客户集中度权重低(15%，分散风险重要)
+
+### 3. 数据隔离
+每个主题独立目录：
+```
+data/
+├── 孙哥方向/
+├── 新能源/
+├── 量子计算/
+└── 生物医药/
+```
+
+### 4. 模块复用
+通用模块(00-13)复用，主题特定模块(15/16)按主题定制。
+
+---
+
+## 新增主题检查清单
+
+- [ ] 创建 `data/{theme-id}/` 目录
+- [ ] 创建 `tickers.yaml` 股票清单
+- [ ] 创建 `valuation.yaml` 估值数据
+- [ ] 创建 `config-{theme}.yaml` 主题配置
+- [ ] 定义产业链七层
+- [ ] 调整IC Score权重
+- [ ] 测试运行 `python multi_agent_orchestrator.py --config config-{theme}.yaml --simulate`

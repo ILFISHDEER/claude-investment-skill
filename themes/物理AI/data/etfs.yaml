@@ -1,0 +1,41 @@
+# 物理AI方向 — ETF备选
+
+etfs:
+  robotics:
+    - name: "Global X Robotics & Artificial Intelligence ETF"
+      code: "BOTZ"
+      focus: "机器人+AI"
+      weight: "NVDA/TSLA约15%"
+    - name: "iShares Robotics and Artificial Intelligence Multisector ETF"
+      code: "IRBO"
+      focus: "机器人自动化"
+    - name: "First Trust Nasdaq Artificial Intelligence and Robotics ETF"
+      code: "ROBT"
+      focus: "AI机器人"
+
+  technology:
+    - name: "ARK Innovation ETF"
+      code: "ARKK"
+      focus: "前沿科技+机器人"
+    - name: "Global X Autonomous & Electric Vehicles ETF"
+      code: "DRIV"
+      focus: "自动驾驶+机器人"
+
+  china:
+    - name: "机器人ETF"
+      code: "159770.SZ"
+      focus: "A股机器人产业链"
+      weight: "绿的谐波/双环传动"
+    - name: "工业母机ETF"
+      code: "159667.SZ"
+      focus: "精密制造"
+    - name: "高端制造ETF"
+      code: "562910.SS"
+      focus: "制造业升级"
+
+selection_guide:
+  原则: |
+    1. 美股机器人选BOTZ/IRBO
+    2. A股机器人选159770.SZ
+    3. 综合科技选ARKK
+    4. 新能源车+机器人选DRIV

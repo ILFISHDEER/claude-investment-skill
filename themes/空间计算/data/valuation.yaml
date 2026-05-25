@@ -1,0 +1,77 @@
+# 空间计算方向 — 估值数据
+# 每周更新
+
+valuation_date: "2026-05-24"
+
+tickers:
+  AAPL:
+    price: 220.0
+    pe: 32.0
+    pb: 45.0
+    market_cap: "3200B"
+    status: "合理"
+
+  META:
+    price: 580.0
+    pe: 28.0
+    pb: 8.0
+    market_cap: "1500B"
+    status: "合理"
+
+  SONY:
+    price: 95.0
+    pe: 18.0
+    pb: 2.0
+    market_cap: "120B"
+    status: "偏低"
+
+  QCOM:
+    price: 195.0
+    pe: 20.0
+    pb: 8.0
+    market_cap: "200B"
+    status: "合理"
+
+  TSM:
+    price: 155.0
+    pe: 25.0
+    pb: 7.0
+    market_cap: "600B"
+    status: "合理"
+
+  GOOGL:
+    price: 165.0
+    pe: 28.0
+    pb: 6.0
+    market_cap: "2000B"
+    status: "合理"
+
+  MSFT:
+    price: 420.0
+    pe: 35.0
+    pb: 12.0
+    market_cap: "3100B"
+    status: "偏高"
+
+# 港股
+  "2382.HK":
+    price: 75.0
+    pe: 35.0
+    pb: 6.0
+    market_cap: "800亿"
+    status: "合理"
+
+# A股
+  "002241.SZ":
+    price: 22.0
+    pe: 25.0
+    pb: 2.5
+    market_cap: "750亿"
+    status: "合理"
+
+  "002475.SZ":
+    price: 38.0
+    pe: 20.0
+    pb: 4.0
+    market_cap: "2700亿"
+    status: "合理"

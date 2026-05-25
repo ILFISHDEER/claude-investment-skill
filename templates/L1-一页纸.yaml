@@ -1,0 +1,75 @@
+---
+# L1-一页纸 模板配置
+template_id: "L1"
+template_name: "一页纸"
+description: "一页纸简报，快速决策"
+target_reader: "上级/老板"
+pages: "1页"
+auto_numbering: true
+
+# 模块配置
+modules:
+  required:
+    - "00-市场情绪分析"
+    - "02-核心投资哲学"
+    - "04-铲子股筛选"
+    - "09-组合构建"
+  optional:
+    - "01-市场环境扫描"
+    - "06-催化剂日历"
+  excluded:
+    # L1不包含的模块
+    - "03-产业链拆解"
+    - "05-护城河评估"
+    - "07-中美对比矩阵"
+    - "08-风险矩阵与对冲"
+    - "10-实操指南"
+    - "11-动态跟踪机制"
+    - "12-预测与实际对比"
+    - "13-ETF备选与核心逻辑"
+    - "14-深度核心逻辑摘要"
+    - "15-产业链全景图谱"
+
+# 章节结构
+sections:
+  - id: "summary"
+    title: "执行摘要"
+    required: true
+    source: "ai_generated"
+    max_length: "200字"
+  - id: "modules"
+    modules: ["00-市场情绪分析", "02-核心投资哲学", "04-铲子股筛选", "09-组合构建"]
+    format: "表格优先"
+
+# 输出要求
+output:
+  min_length: "500字"
+  max_length: "1500字"
+  required_elements:
+    - "执行摘要"
+    - "市场情绪"
+    - "核心标的"
+    - "仓位建议"
+    - "风险提示"
+
+# 格式要求
+formatting:
+  table_priority: true
+  bullet_points: true
+  paragraph_limit: "每段不超过3行"
+
+# 元数据要求
+metadata:
+  required_fields:
+    - "report_theme"
+    - "report_date"
+    - "report_depth"
+    - "generated_by_modules"
+
+# 验证规则
+validation:
+  check_placeholders: true
+  placeholder_threshold: 5  # 最多允许5个占位符
+  check_module_footers: true
+  module_footer_coverage: 0.8  # 至少80%章节有来源标记
+  check_data_freshness: true

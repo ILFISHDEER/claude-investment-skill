@@ -1,0 +1,55 @@
+# 新能源方向 — 催化剂日历
+# 每月手动更新
+
+catalysts:
+  near_term:
+    - date: "2026-06-01"
+      event: "中国新能源装机量月度数据"
+      tickers: ["FSLR", "ENPH", "TSLA"]
+      impact: "正向"
+      confidence: "高"
+      priced_in: "部分"
+      status: "待发生"
+
+    - date: "2026-07-15"
+      event: "美国核电政策听证会"
+      tickers: ["CEG", "OKLO", "CCJ"]
+      impact: "正向"
+      confidence: "中"
+      priced_in: "未"
+      status: "待发生"
+
+  mid_term:
+    - date: "2026-09-01"
+      event: "固态电池量产进展"
+      tickers: ["QS"]
+      impact: "正向"
+      confidence: "中"
+      priced_in: "未"
+      status: "待发生"
+
+    - date: "2026-10-01"
+      event: "欧盟新能源补贴法案"
+      tickers: ["VWS.CO", "FSLR"]
+      impact: "正向"
+      confidence: "中"
+      priced_in: "未"
+      status: "待发生"
+
+  long_term:
+    - date: "2027-01-01"
+      event: "小型模块化反应堆商业化"
+      tickers: ["OKLO", "SMR", "CEG"]
+      impact: "正向"
+      confidence: "中"
+      priced_in: "未"
+      status: "待发生"
+
+  black_swan:
+    - event: "核安全事故"
+      probability: "低"
+      impact: "负向"
+      tickers: ["CEG", "OKLO", "SMR"]
+      warning_signal: "监管政策收紧"
+
+# 数据更新日期：2026-05-24

@@ -1,0 +1,31 @@
+# 量子计算方向 — ETF备选
+
+etfs:
+  quantum:
+    - name: "Defiance Quantum ETF"
+      code: "QTUM"
+      focus: "量子计算+AI"
+      weight: "IBM/GOOGL约10%"
+    - name: "Global X Quantum Computing ETF"
+      code: "QTUM"
+      focus: "纯量子计算"
+
+  technology:
+    - name: "ARK Quantum Computing ETF"
+      code: "ARKQ"
+      focus: "前沿科技+量子"
+
+  a_share:
+    - name: "科创信息ETF"
+      code: "588100.SS"
+      focus: "科创板信息技术"
+    - name: "信息安全ETF"
+      code: "159613.SZ"
+      focus: "信息安全+量子通信"
+
+selection_guide:
+  原则: |
+    1. 美股量子选QTUM
+    2. A股量子通过科创信息ETF间接配置
+    3. 量子通信选信息安全ETF
+    4. 注意量子ETF包含AI混合持仓

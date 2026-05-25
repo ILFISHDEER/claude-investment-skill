@@ -1,0 +1,83 @@
+# 量子计算方向 — 估值数据
+# 每周更新
+
+valuation_date: "2026-05-24"
+
+tickers:
+  IBM:
+    price: 220.0
+    pe: 25.0
+    pb: 8.0
+    market_cap: "200B"
+    status: "合理"
+
+  GOOGL:
+    price: 165.0
+    pe: 28.0
+    pb: 6.0
+    market_cap: "2000B"
+    status: "合理"
+
+  MSFT:
+    price: 420.0
+    pe: 35.0
+    pb: 12.0
+    market_cap: "3100B"
+    status: "偏高"
+
+  AMZN:
+    price: 195.0
+    pe: 60.0
+    pb: 8.0
+    market_cap: "2000B"
+    status: "偏高"
+
+  NVDA:
+    price: 125.0
+    pe: 65.0
+    pb: 50.0
+    market_cap: "3000B"
+    status: "偏高"
+
+  IONQ:
+    price: 42.0
+    pe: null
+    pb: 15.0
+    market_cap: "8B"
+    status: "投机"
+
+  RGTI:
+    price: 18.0
+    pe: null
+    pb: 8.0
+    market_cap: "4B"
+    status: "投机"
+
+  QBTS:
+    price: 1.2
+    pe: null
+    pb: 5.0
+    market_cap: "0.3B"
+    status: "投机"
+
+  FORM:
+    price: 38.0
+    pe: 25.0
+    pb: 4.0
+    market_cap: "3B"
+    status: "合理"
+
+  KEYS:
+    price: 155.0
+    pe: 22.0
+    pb: 6.0
+    market_cap: "28B"
+    status: "合理"
+
+# A股
+  "688027.SS":
+    price: 185.0
+    pe: null
+    pb: 8.0
+    market_cap: "150亿"
+    status: "投机"

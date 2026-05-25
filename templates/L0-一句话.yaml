@@ -1,0 +1,44 @@
+---
+# L0-一句话 模板配置
+template_id: "L0"
+template_name: "一句话"
+description: "一句话结论，最快决策"
+target_reader: "需要秒级判断的决策者"
+pages: "1段"
+auto_numbering: false
+
+# 模块配置
+modules:
+  # L0只包含核心结论，不需要完整模块
+  required: []  # 没有必需模块
+  optional:
+    - "00-市场情绪分析"
+    - "09-组合构建"
+
+# 章节结构（L0没有标准章节）
+sections: []
+
+# 输出要求
+output:
+  min_length: "30字"
+  max_length: "100字"
+  required_elements:
+    - "核心判断"
+    - "仓位建议"
+    - "时间维度"
+    - "最大风险"
+
+# 元数据要求
+metadata:
+  required_fields:
+    - "report_theme"
+    - "report_date"
+    - "report_depth"
+  optional_fields:
+    - "generated_by_modules"
+
+# 验证规则
+validation:
+  check_placeholders: false  # L0不检查占位符
+  check_module_footers: false  # L0不需要模块来源标记
+  check_data_freshness: true

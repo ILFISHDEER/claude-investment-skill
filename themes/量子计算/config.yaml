@@ -1,0 +1,168 @@
+# Investment Skill — 量子计算主题配置
+# 量子计算硬件、软件、应用产业链分析
+
+meta:
+  skill_version: "2.0"
+  generated_at: "2026-05-24"
+
+# === 报告主题 ===
+theme:
+  name: "量子计算产业链分析"
+  id: "quantum-computing"
+  description: "量子计算硬件(量子比特/控制/纠错)、软件(算法/编译器)、云服务、应用全链条"
+
+# === 输出控制 ===
+output:
+  depth: "L3"
+  style: "散户科普风"
+  market_focus: "中美双线"
+
+# === 产业链层级定义（量子计算七层）===
+industry_layers:
+  - name: "量子比特技术"
+    id: "qubit-tech"
+    description: "超导/离子阱/光量子/硅量子/中性原子等不同技术路线"
+    key_metrics: ["量子比特数", "相干时间(T1/T2)", "单/双量子比特门保真度"]
+
+  - name: "量子控制"
+    id: "quantum-control"
+    description: "低温系统/控制电子学/微波系统/屏蔽"
+    key_metrics: ["控制精度", "低温要求(mK)", "扩展性", "成本"]
+
+  - name: "量子纠错"
+    id: "quantum-error-correction"
+    description: "表面码/颜色码/LDPC码等纠错方案"
+    key_metrics: ["逻辑错误率", "物理比特开销", "逻辑比特数"]
+
+  - name: "量子软件"
+    id: "quantum-software"
+    description: "量子编程语言/编译器/算法库/开发工具"
+    key_metrics: ["算法效率", "开发者数量", "生态成熟度"]
+
+  - name: "量子云平台"
+    id: "quantum-cloud"
+    description: "量子计算云服务(IBMQ/AWS/Azure)"
+    key_metrics: ["可用量子比特", "任务队列", "用户数量", "可靠性"]
+
+  - name: "量子应用"
+    id: "quantum-applications"
+    description: "量子模拟/优化/密码学/机器学习"
+    key_metrics: ["量子优势", "商业价值", "成熟度"]
+
+  - name: "量子通信/安全"
+    id: "quantum-comm"
+    description: "量子密钥分发/后量子密码"
+    key_metrics: ["传输距离", "密钥生成率", "安全性证明"]
+
+# === IC Score权重（量子计算调整）===
+ic_score_weights:
+  I_irreplaceability: 35        # 技术独占性极高（全球没几家）
+  C_customer_concentration: 20  # 客户集中（政府/大企业）
+  T_technology_barrier: 30      # 技术壁垒极高
+  S_scale_effect: 10            # 规模效应相对不重要（定制）
+  M_market_liquidity: 5
+
+# === 供应链层级定义 ===
+supply_chain_layers:
+  - "稀释制冷机"
+  - "超导材料"
+  - "微波器件"
+  - "精密电子"
+  - "量子芯片"
+  - "量子系统"
+  - "云服务"
+  - "应用"
+
+# === 模块开关 ===
+modules:
+  enabled:
+    - "00-市场情绪分析"
+    - "01-市场环境扫描"
+    - "02-核心投资哲学"
+    - "03-产业链拆解"
+    - "16-供应链分析"
+    - "15-产业链全景图谱"
+    - "04-铲子股筛选"
+    - "05-护城河评估"
+    - "06-催化剂日历"
+    - "07-中美对比矩阵"
+    - "08-风险矩阵与对冲"
+    - "09-组合构建"
+    - "10-实操指南"
+    - "11-动态跟踪机制"
+    - "12-预测与实际对比"
+    - "13-ETF备选与核心逻辑"
+    - "14-深度核心逻辑摘要"
+
+# === 框架嵌入 ===
+frameworks:
+  - "二阶三阶思维"
+  - "晨星护城河评级"
+  - "Gartner技术成熟度曲线"
+  - "国家科技竞争"
+
+# === 数据路径 ===
+data_path: "themes/量子计算/data/"
+
+# === 量子计算特定配置 ===
+theme_specific:
+  qubit_technologies:
+    - name: "超导"
+      leader: "IBM/Google/Rigetti"
+      advantage: "集成度高"
+      challenge: "低温要求苛刻"
+    - name: "离子阱"
+      leader: "IonQ/Honeywell"
+      advantage: "相干时间长"
+      challenge: "扩展性受限"
+    - name: "光量子"
+      leader: "PsiQuantum/Xanadu"
+      advantage: "室温运行"
+      challenge: "探测效率"
+    - name: "硅量子"
+      leader: "Intel/新南威尔士"
+      advantage: "可CMOS工艺"
+      challenge: "同位素纯化"
+    - name: "中性原子"
+      leader: "QuEra/Pasqal"
+      advantage: "易扩展"
+      challenge: "门速度较慢"
+
+  key_metrics:
+    - "量子比特数"
+    - "相干时间(T1/T2)"
+    - "单量子比特门错误率"
+    - "双量子比特门错误率"
+    - "读取错误率"
+    - "逻辑错误率"
+    - "量子体积(QV)"
+    - " CLOPS"
+
+  milestones:
+    - name: "量子优越性"
+      achieved: true
+      year: 2019
+      leader: "Google"
+    - name: "量子纠错"
+      achieved: false
+      target: "2025-2030"
+      requirement: "1000+物理比特"
+    - name: "容错量子计算"
+      achieved: false
+      target: "2030-2040"
+      requirement: "100万+物理比特"
+    - name: "实用化"
+      achieved: false
+      target: "2035+"
+      applications: ["材料模拟", "药物发现", "优化"]
+
+  supply_risks:
+    - "稀释制冷机全球仅Bluefors/Oxford Instruments两家"
+    - "超导材料(铌)依赖进口"
+    - "高精度微波器件依赖进口"
+    - "技术人才稀缺"
+
+  policy_drivers:
+    - "美国: NQI国家量子倡议"
+    - "中国: 十四五量子科技专项"
+    - "欧盟: 量子旗舰计划"

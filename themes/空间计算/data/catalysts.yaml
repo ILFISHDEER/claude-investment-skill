@@ -1,0 +1,62 @@
+# 空间计算方向 — 催化剂日历
+
+catalysts:
+  near_term:
+    - date: "2026-06-01"
+      event: "Vision Pro二代发布传闻"
+      tickers: ["AAPL", "SONY", "2382.HK"]
+      impact: "正向"
+      confidence: "中"
+      priced_in: "部分"
+      status: "待发生"
+
+    - date: "2026-06-15"
+      event: "Meta Quest 3S销量数据"
+      tickers: ["META", "QCOM"]
+      impact: "正向"
+      confidence: "高"
+      priced_in: "部分"
+      status: "待发生"
+
+  mid_term:
+    - date: "2026-09-01"
+      event: "Android XR生态发布"
+      tickers: ["GOOGL", "QCOM", "META"]
+      impact: "正向"
+      confidence: "高"
+      priced_in: "未"
+      status: "待发生"
+
+    - date: "2026-10-01"
+      event: "苹果Vision Pro价格下调"
+      tickers: ["AAPL", "SONY"]
+      impact: "正向"
+      confidence: "中"
+      priced_in: "未"
+      status: "待发生"
+
+  long_term:
+    - date: "2027-01-01"
+      event: "AR眼镜消费级突破"
+      tickers: ["AAPL", "GOOGL", "META"]
+      impact: "正向"
+      confidence: "中"
+      priced_in: "未"
+      status: "待发生"
+
+    - date: "2028-01-01"
+      event: "空间计算渗透率10%"
+      tickers: ["AAPL", "QCOM", "SONY"]
+      impact: "正向"
+      confidence: "低"
+      priced_in: "未"
+      status: "待发生"
+
+  black_swan:
+    - event: "VR设备健康安全问题"
+      probability: "低"
+      impact: "负向"
+      tickers: ["META", "AAPL"]
+      warning_signal: "监管调查"
+
+# 数据更新日期：2026-05-24

@@ -1,0 +1,173 @@
+---
+# L3-深度 模板配置
+template_id: "L3"
+template_name: "深度"
+description: "深度研究报告，10-20页"
+target_reader: "研究员/基金经理"
+pages: "10-20页"
+auto_numbering: true
+
+# 模块配置
+modules:
+  required:
+    - "00-市场情绪分析"
+    - "01-市场环境扫描"
+    - "02-核心投资哲学"
+    - "03-产业链拆解"
+    - "04-铲子股筛选"
+    - "05-护城河评估"
+    - "06-催化剂日历"
+    - "07-中美对比矩阵"
+    - "08-风险矩阵与对冲"
+    - "09-组合构建"
+    - "10-实操指南"
+    - "15-产业链全景图谱"
+  optional:
+    - "11-动态跟踪机制"
+    - "12-预测与实际对比"
+    - "13-ETF备选与核心逻辑"
+    - "14-深度核心逻辑摘要"
+  excluded: []  # L3几乎包含所有模块
+
+# 章节结构
+sections:
+  - id: "00"
+    module: "00-市场情绪分析"
+    title: "市场情绪分析"
+    required: true
+    max_depth: 3
+  - id: "01"
+    module: "01-市场环境扫描"
+    title: "市场环境扫描"
+    required: true
+    max_depth: 3
+  - id: "02"
+    module: "02-核心投资哲学"
+    title: "核心投资哲学"
+    required: true
+    max_depth: 3
+  - id: "03"
+    module: "03-产业链拆解"
+    title: "产业链全景拆解"
+    required: true
+    max_depth: 4  # 可以展开到四级标题
+    table_required: true
+  - id: "14"
+    module: "14-深度核心逻辑摘要"
+    title: "深度核心逻辑摘要"
+    required: false
+    max_depth: 3
+  - id: "15"
+    module: "15-产业链全景图谱"
+    title: "产业链全景图谱"
+    required: true
+    max_depth: 4  # IC Score表格层级
+    table_required: true
+  - id: "04"
+    module: "04-铲子股筛选"
+    title: "铲子股筛选框架"
+    required: true
+    max_depth: 3
+    table_required: true
+  - id: "05"
+    module: "05-护城河评估"
+    title: "护城河评估"
+    required: true
+    max_depth: 3
+    table_required: true
+  - id: "06"
+    module: "06-催化剂日历"
+    title: "催化剂日历"
+    required: true
+    max_depth: 3
+    table_required: true
+  - id: "07"
+    module: "07-中美对比矩阵"
+    title: "中美对比矩阵"
+    required: true
+    max_depth: 3
+    table_required: true
+  - id: "08"
+    module: "08-风险矩阵与对冲"
+    title: "风险矩阵与对冲"
+    required: true
+    max_depth: 3
+    table_required: true
+  - id: "09"
+    module: "09-组合构建"
+    title: "投资组合建议"
+    required: true
+    max_depth: 3
+    table_required: true
+  - id: "10"
+    module: "10-实操指南"
+    title: "实操指南"
+    required: true
+    max_depth: 3
+  - id: "11"
+    module: "11-动态跟踪机制"
+    title: "动态跟踪机制"
+    required: false
+    max_depth: 2
+  - id: "12"
+    module: "12-预测与实际对比"
+    title: "预测与实际对比"
+    required: false
+    max_depth: 3
+  - id: "13"
+    module: "13-ETF备选与核心逻辑"
+    title: "ETF备选与核心逻辑"
+    required: false
+    max_depth: 3
+
+# 输出要求
+output:
+  min_length: "8000字"
+  max_length: "20000字"
+  required_elements:
+    - "情绪温度计"
+    - "宏观环境"
+    - "投资三原则"
+    - "产业链拆解（美国+中国）"
+    - "铲子股筛选"
+    - "护城河评估"
+    - "催化剂日历"
+    - "中美对比"
+    - "风险矩阵"
+    - "组合配置"
+    - "实操指南"
+    - "IC Score评级"  # L3特有
+
+# 格式要求
+formatting:
+  table_priority: true
+  table_min_count: 10  # 至少10个表格
+  mermaid_support: true  # 支持Mermaid图表
+  chart_support: true
+  image_support: true  # 支持图片
+
+# 元数据要求
+metadata:
+  required_fields:
+    - "report_theme"
+    - "report_theme_id"
+    - "report_description"
+    - "report_depth"
+    - "report_style"
+    - "report_market_focus"
+    - "report_date"
+    - "report_version"
+    - "generated_by_modules"
+    - "total_modules"
+    - "data_snapshot"
+
+# 验证规则
+validation:
+  check_placeholders: true
+  placeholder_threshold: 20
+  check_module_footers: true
+  module_footer_coverage: 0.95  # 95%章节必须有来源标记
+  check_data_freshness: true
+  data_max_age: 7
+  check_chapter_continuity: true
+  check_table_completeness: true

@@ -1,0 +1,91 @@
+# 物理AI方向 — 估值数据
+# 每周更新
+
+valuation_date: "2026-05-24"
+
+tickers:
+  # 美股
+  TSLA:
+    price: 340.0
+    pe: 75.0
+    pb: 10.0
+    market_cap: "1100B"
+    status: "偏高"
+
+  NVDA:
+    price: 125.0
+    pe: 65.0
+    pb: 50.0
+    market_cap: "3000B"
+    status: "偏高"
+
+  AVAV:
+    price: 185.0
+    pe: null
+    pb: 8.0
+    market_cap: "5B"
+    status: "偏高"
+
+  KTOS:
+    price: 28.0
+    pe: null
+    pb: 4.0
+    market_cap: "3.5B"
+    status: "合理"
+
+  # A股
+  "688017.SS":
+    price: 145.0
+    pe: 120.0
+    pb: 15.0
+    market_cap: "250亿"
+    status: "偏高"
+
+  "002472.SZ":
+    price: 32.0
+    pe: 35.0
+    pb: 3.5
+    market_cap: "280亿"
+    status: "合理"
+
+  "601100.SS":
+    price: 58.0
+    pe: 28.0
+    pb: 4.5
+    market_cap: "780亿"
+    status: "合理"
+
+  "002050.SZ":
+    price: 28.0
+    pe: 35.0
+    pb: 4.5
+    market_cap: "1050亿"
+    status: "合理"
+
+  "601689.SS":
+    price: 48.0
+    pe: 32.0
+    pb: 3.8
+    market_cap: "550亿"
+    status: "合理"
+
+  "603728.SS":
+    price: 68.0
+    pe: 45.0
+    pb: 5.5
+    market_cap: "180亿"
+    status: "偏高"
+
+  "688686.SS":
+    price: 92.0
+    pe: 55.0
+    pb: 7.0
+    market_cap: "110亿"
+    status: "偏高"
+
+  "603893.SS":
+    price: 85.0
+    pe: 80.0
+    pb: 8.5
+    market_cap: "350亿"
+    status: "偏高"

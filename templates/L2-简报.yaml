@@ -1,0 +1,106 @@
+---
+# L2-简报 模板配置
+template_id: "L2"
+template_name: "简报"
+description: "日常简报，3-5页"
+target_reader: "基金经理/研究员"
+pages: "3-5页"
+auto_numbering: true
+
+# 模块配置
+modules:
+  required:
+    - "00-市场情绪分析"
+    - "01-市场环境扫描"
+    - "02-核心投资哲学"
+    - "04-铲子股筛选"
+    - "05-护城河评估"
+    - "09-组合构建"
+  optional:
+    - "06-催化剂日历"
+    - "07-中美对比矩阵"
+    - "08-风险矩阵与对冲"
+    - "13-ETF备选与核心逻辑"
+  excluded:
+    - "03-产业链拆解"  # L2不需要完整拆解
+    - "10-实操指南"
+    - "11-动态跟踪机制"
+    - "12-预测与实际对比"
+    - "14-深度核心逻辑摘要"
+    - "15-产业链全景图谱"  # L2不展开
+
+# 章节结构
+sections:
+  - id: "00"
+    module: "00-市场情绪分析"
+    title: "市场情绪"
+    required: true
+    max_depth: 2  # 只展开到二级标题
+  - id: "01"
+    module: "01-市场环境扫描"
+    title: "市场环境"
+    required: true
+    max_depth: 2
+  - id: "02"
+    module: "02-核心投资哲学"
+    title: "投资逻辑"
+    required: true
+    max_depth: 2
+  - id: "04"
+    module: "04-铲子股筛选"
+    title: "核心标的"
+    required: true
+    max_depth: 2
+    table_required: true  # 必须有表格
+  - id: "05"
+    module: "05-护城河评估"
+    title: "护城河"
+    required: true
+    max_depth: 2
+  - id: "06"
+    module: "06-催化剂日历"
+    title: "催化剂"
+    required: false
+    max_depth: 2
+  - id: "09"
+    module: "09-组合构建"
+    title: "组合建议"
+    required: true
+    max_depth: 2
+
+# 输出要求
+output:
+  min_length: "2000字"
+  max_length: "5000字"
+  required_elements:
+    - "情绪指标"
+    - "宏观环境"
+    - "核心逻辑"
+    - "标的清单"
+    - "仓位配置"
+    - "风险提示"
+
+# 格式要求
+formatting:
+  table_priority: true
+  table_min_count: 3  # 至少3个表格
+  chart_support: true  # 支持图表
+
+# 元数据要求
+metadata:
+  required_fields:
+    - "report_theme"
+    - "report_date"
+    - "report_depth"
+    - "report_style"
+    - "generated_by_modules"
+    - "data_snapshot"
+
+# 验证规则
+validation:
+  check_placeholders: true
+  placeholder_threshold: 10
+  check_module_footers: true
+  module_footer_coverage: 0.9
+  check_data_freshness: true
+  data_max_age: 7  # 数据最多7天

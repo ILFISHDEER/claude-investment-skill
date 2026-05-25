@@ -1,0 +1,129 @@
+# Investment Skill — 物理AI主题配置
+# Physical AI: 物理世界中的AI应用，机器人/具身智能/无人机
+
+meta:
+  skill_version: "2.0"
+  generated_at: "2026-05-24"
+
+# === 报告主题 ===
+theme:
+  name: "物理AI产业链深度分析"
+  id: "physical-ai"
+  description: "Physical AI：AI在物理世界的应用，包括人形机器人、工业机器人、无人机等"
+
+# === 输出控制 ===
+output:
+  depth: "L4"
+  style: "专业投研风"
+  market_focus: "中美双线"
+
+# === 产业链层级定义（物理AI六层）===
+industry_layers:
+  - name: "终端整机"
+    id: "terminal"
+    description: "人形机器人/工业机器人/无人机整机"
+    key_metrics: ["出货量", "渗透率", "ASP", "客户集中度"]
+
+  - name: "大脑算法"
+    id: "brain"
+    description: "AI大模型/感知算法/决策算法"
+    key_metrics: ["参数量", "响应延迟", "准确率", "泛化能力"]
+
+  - name: "传感器"
+    id: "sensors"
+    description: "视觉/雷达/力矩/IMU传感器"
+    key_metrics: ["精度", "成本", "功耗", "可靠性"]
+
+  - name: "执行器"
+    id: "actuators"
+    description: "电机/减速器/丝杠/液压"
+    key_metrics: ["扭矩密度", "响应速度", "寿命", "成本"]
+
+  - name: "结构件"
+    id: "structure"
+    description: "轻量化材料/外壳/散热"
+    key_metrics: ["重量", "强度", "成本", "可制造性"]
+
+  - name: "系统集成"
+    id: "integration"
+    description: "软硬件集成/测试/部署"
+    key_metrics: ["良率", "交付周期", "售后成本"]
+
+# === IC Score权重（物理AI调整）===
+ic_score_weights:
+  I_irreplaceability: 35
+  C_customer_concentration: 15
+  T_technology_barrier: 30
+  S_scale_effect: 15
+  M_market_liquidity: 5
+
+# === 供应链层级定义 ===
+supply_chain_layers:
+  - "芯片/算力"
+  - "传感器"
+  - "减速器"
+  - "电机"
+  - "丝杠"
+  - "结构件"
+  - "整机集成"
+
+# === 模块开关 ===
+modules:
+  enabled:
+    - "00-市场情绪分析"
+    - "01-市场环境扫描"
+    - "02-核心投资哲学"
+    - "03-产业链拆解"
+    - "16-供应链分析"
+    - "15-产业链全景图谱"
+    - "04-铲子股筛选"
+    - "05-护城河评估"
+    - "06-催化剂日历"
+    - "07-中美对比矩阵"
+    - "08-风险矩阵与对冲"
+    - "09-组合构建"
+    - "10-实操指南"
+    - "11-动态跟踪机制"
+    - "12-预测与实际对比"
+    - "13-ETF备选与核心逻辑"
+    - "14-深度核心逻辑摘要"
+
+# === 框架嵌入 ===
+frameworks:
+  - "二阶三阶思维"
+  - "晨星护城河评级"
+  - "费雪成长股原则"
+  - "ARK颠覆性创新时间线"
+
+# === 数据路径 ===
+data_path: "themes/物理AI/data/"
+
+# === 物理AI特定配置 ===
+theme_specific:
+  key_segments:
+    - name: "人形机器人"
+      leader: "特斯拉Optimus/宇树科技/Figure AI"
+      key_tech: ["大模型", "灵巧手", "双足行走"]
+    - name: "工业机器人"
+      leader: "发那科/ABB/库卡"
+      key_tech: ["精度控制", "协作安全", "编程简易"]
+    - name: "无人机"
+      leader: "大疆/AeroVironment"
+      key_tech: ["飞控", "续航", "避障"]
+
+  milestones:
+    - name: "人形机器人量产"
+      target: "2027"
+      requirement: "年产10万台"
+    - name: "成本降至2万美元"
+      target: "2028"
+      requirement: "规模效应+供应链成熟"
+    - name: "家庭场景渗透"
+      target: "2030"
+      requirement: "价格<$1万+功能成熟"
+
+  supply_risks:
+    - "谐波减速器/行星滚柱丝杠依赖进口"
+    - "高端电机控制芯片依赖进口"
+    - "AI芯片算力受限"
+    - "轻量化材料成本高"

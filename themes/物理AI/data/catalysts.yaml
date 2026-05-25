@@ -1,0 +1,83 @@
+# 物理AI方向 — 催化剂日历
+
+catalysts:
+  near_term:
+    - date: "2026-06-15"
+      event: "特斯拉Optimus Gen 3产线启动"
+      tickers: ["TSLA"]
+      impact: "正向"
+      confidence: "高"
+      priced_in: "部分"
+      status: "待发生"
+
+    - date: "2026-07-01"
+      event: "宇树科技科创板IPO审核"
+      tickers: ["688017.SS", "002472.SZ"]
+      impact: "正向"
+      confidence: "中"
+      priced_in: "未"
+      status: "待发生"
+
+    - date: "2026-08-01"
+      event: "英伟达Jetson Thor量产"
+      tickers: ["NVDA"]
+      impact: "正向"
+      confidence: "高"
+      priced_in: "部分"
+      status: "待发生"
+
+  mid_term:
+    - date: "2026-10-01"
+      event: "Figure AI新融资/估值更新"
+      tickers: ["TSLA", "NVDA"]
+      impact: "正向"
+      confidence: "中"
+      priced_in: "未"
+      status: "待发生"
+
+    - date: "2026-12-01"
+      event: "绿的谐波产能爬坡"
+      tickers: ["688017.SS"]
+      impact: "正向"
+      confidence: "高"
+      priced_in: "部分"
+      status: "待发生"
+
+  long_term:
+    - date: "2027-01-01"
+      event: "人形机器人量产元年"
+      tickers: ["TSLA", "NVDA", "688017.SS", "002472.SZ"]
+      impact: "正向"
+      confidence: "中"
+      priced_in: "未"
+      status: "待发生"
+
+    - date: "2027-06-01"
+      event: "成本降至2万美元里程碑"
+      tickers: ["TSLA", "601100.SS", "601689.SS"]
+      impact: "正向"
+      confidence: "中"
+      priced_in: "未"
+      status: "待发生"
+
+    - date: "2028-01-01"
+      event: "家庭场景机器人渗透"
+      tickers: ["TSLA", "NVDA"]
+      impact: "正向"
+      confidence: "低"
+      priced_in: "未"
+      status: "待发生"
+
+  black_swan:
+    - event: "人形机器人安全事故"
+      probability: "低"
+      impact: "负向"
+      tickers: ["TSLA"]
+      warning_signal: "监管介入"
+    - event: "AI芯片出口管制升级"
+      probability: "中"
+      impact: "负向"
+      tickers: ["NVDA", "603893.SS", "300458.SZ"]
+      warning_signal: "新出口管制清单"
+
+# 数据更新日期：2026-05-24

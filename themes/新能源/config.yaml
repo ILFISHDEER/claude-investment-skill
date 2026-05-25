@@ -1,0 +1,127 @@
+# Investment Skill — 新能源主题配置
+# 锂电池、储能、光伏、氢能产业链分析
+
+meta:
+  skill_version: "2.0"
+  generated_at: "2026-05-24"
+
+# === 报告主题 ===
+theme:
+  name: "新能源产业链全景梳理与铲子股挖掘"
+  id: "new-energy"
+  description: "锂电池、储能、光伏、氢能等新能源产业链分析，识别材料/设备/制造环节的铲子股"
+
+# === 输出控制 ===
+output:
+  depth: "L3"
+  style: "散户科普风"
+  market_focus: "中美双线"
+
+# === 产业链层级定义（新能源七层）===
+industry_layers:
+  - name: "原材料"
+    id: "materials"
+    description: "锂/钴/镍/稀土等矿产资源，上游资源"
+    key_metrics: ["储量", "开采成本", "回收率", "ESG评级"]
+
+  - name: "电池材料"
+    id: "battery-materials"
+    description: "正极/负极/隔膜/电解液四大主材"
+    key_metrics: ["能量密度", "循环寿命", "成本", "良品率"]
+
+  - name: "电芯制造"
+    id: "cell-manufacturing"
+    description: "动力电池/储能电池制造"
+    key_metrics: ["产能(GWh)", "良品率", "能量密度", "客户订单"]
+
+  - name: "电池Pack"
+    id: "battery-pack"
+    description: "模组/Pack组装/结构件"
+    key_metrics: ["成组效率", "能量密度", "成本", "安全性"]
+
+  - name: "BMS/热管理"
+    id: "bms-thermal"
+    description: "电池管理系统/热管理系统"
+    key_metrics: ["SOC精度", "热失控防护", "能耗"]
+
+  - name: "系统集成"
+    id: "integration"
+    description: "储能系统/整车集成"
+    key_metrics: ["系统效率", "循环次数", "度电成本", "响应速度"]
+
+  - name: "应用终端"
+    id: "applications"
+    description: "电动车/储能/消费电子"
+    key_metrics: ["销量", "渗透率", "续航里程", "充电速度"]
+
+# === IC Score权重（新能源调整）===
+ic_score_weights:
+  I_irreplaceability: 30        # 资源垄断重要
+  C_customer_concentration: 20  # 客户相对分散（储能+车）
+  T_technology_barrier: 25
+  S_scale_effect: 20            # 规模效应更重要（制造业）
+  M_market_liquidity: 5
+
+# === 供应链层级定义 ===
+supply_chain_layers:
+  - "矿产资源"
+  - "化工材料"
+  - "电池材料"
+  - "电芯制造"
+  - "Pack/模组"
+  - "系统集成"
+  - "终端应用"
+
+# === 模块开关 ===
+modules:
+  enabled:
+    - "00-市场情绪分析"
+    - "01-市场环境扫描"
+    - "02-核心投资哲学"
+    - "03-产业链拆解"
+    - "16-供应链分析"
+    - "15-产业链全景图谱"
+    - "04-铲子股筛选"
+    - "05-护城河评估"
+    - "06-催化剂日历"
+    - "07-中美对比矩阵"
+    - "08-风险矩阵与对冲"
+    - "09-组合构建"
+    - "10-实操指南"
+    - "11-动态跟踪机制"
+    - "12-预测与实际对比"
+    - "13-ETF备选与核心逻辑"
+    - "14-深度核心逻辑摘要"
+
+# === 框架嵌入 ===
+frameworks:
+  - "二阶三阶思维"
+  - "晨星护城河评级"
+  - "费雪成长股原则"
+  - "大宗商品周期"
+
+# === 数据路径 ===
+data_path: "themes/新能源/data/"
+
+# === 新能源特定配置 ===
+theme_specific:
+  key_materials: ["锂", "钴", "镍", "石墨", "稀土", "磷", "氟"]
+  key_equipment: ["涂布机", "辊压机", "分条机", "卷绕机", "叠片机", "化成分容"]
+  cost_curve: "$/kWh下降趋势"
+  policy_drivers: ["双碳目标", "储能配比要求", "新能源补贴", "购置税减免"]
+  demand_drivers: ["电动车渗透率", "储能装机量", "消费电子需求"]
+
+  # 供应链特定风险
+  supply_risks:
+    - "锂资源地缘分布不均"
+    - "镍钴依赖进口"
+    - "高端设备进口依赖"
+    - "技术路线迭代风险"
+
+  # 关键技术趋势
+  tech_trends:
+    - "固态电池"
+    - "钠离子电池"
+    - "磷酸锰铁锂"
+    - "硅基负极"
+    - "4680大圆柱"

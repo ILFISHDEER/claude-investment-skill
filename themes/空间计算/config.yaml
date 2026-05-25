@@ -1,0 +1,108 @@
+# Investment Skill — 空间计算主题配置
+# Vision Pro + 空间计算产业链
+
+meta:
+  skill_version: "2.0"
+  generated_at: "2026-05-24"
+
+# === 报告主题 ===
+theme:
+  name: "空间计算产业链深度分析"
+  id: "spatial-computing"
+  description: "Vision Pro空间计算产业链，识别光学/芯片/显示的铲子股"
+
+# === 输出控制 ===
+output:
+  depth: "L3"
+  style: "专业投研风"
+  market_focus: "中美双线"
+
+# === 产业链层级定义（空间计算六层）===
+industry_layers:
+  - name: "整机品牌"
+    id: "headset-brand"
+    description: "Vision Pro/Quest/PSVR等头显品牌"
+    key_metrics: ["出货量", "市场份额", "用户留存", "内容生态"]
+
+  - name: "芯片层"
+    id: "chips"
+    description: "XR SoC/ISP/PMIC等专用芯片"
+    key_metrics: ["性能", "功耗", "成本", "生态绑定"]
+
+  - name: "显示层"
+    id: "display"
+    description: "MicroOLED/LCD/LED显示技术"
+    key_metrics: ["分辨率", "刷新率", "亮度", "成本"]
+
+  - name: "光学层"
+    id: "optics"
+    description: "Pancake/光波导/自由曲面镜头"
+    key_metrics: ["FOV", "厚度", "重量", "良率"]
+
+  - name: "传感器层"
+    id: "sensors"
+    description: "摄像头/IMU/眼动追踪/手势识别"
+    key_metrics: ["精度", "延迟", "功耗", "成本"]
+
+  - name: "结构件层"
+    id: "structure"
+    description: "外壳/散热/电池/组装"
+    key_metrics: ["重量", "强度", "散热", "成本"]
+
+# === IC Score权重（空间计算调整）===
+ic_score_weights:
+  I_irreplaceability: 35
+  C_customer_concentration: 25
+  T_technology_barrier: 25
+  S_scale_effect: 10
+  M_market_liquidity: 5
+
+# === 模块开关 ===
+modules:
+  enabled:
+    - "00-市场情绪分析"
+    - "01-市场环境扫描"
+    - "02-核心投资哲学"
+    - "03-产业链拆解"
+    - "16-供应链分析"
+    - "15-产业链全景图谱"
+    - "04-铲子股筛选"
+    - "05-护城河评估"
+    - "06-催化剂日历"
+    - "07-中美对比矩阵"
+    - "08-风险矩阵与对冲"
+    - "09-组合构建"
+    - "10-实操指南"
+    - "11-动态跟踪机制"
+    - "12-预测与实际对比"
+    - "13-ETF备选与核心逻辑"
+    - "14-深度核心逻辑摘要"
+
+# === 框架嵌入 ===
+frameworks:
+  - "二阶三阶思维"
+  - "晨星护城河评级"
+  - "费雪成长股原则"
+  - "苹果生态飞轮"
+
+# === 数据路径 ===
+data_path: "themes/空间计算/data/"
+
+# === 空间计算特定配置 ===
+theme_specific:
+  key_technologies: ["MicroOLED", "Pancake光学", "XR芯片", "SLAM算法"]
+  key_equipment: ["光刻机", "蒸镀设备", "贴合设备", "检测设备"]
+
+  milestones:
+    - year: 2024
+      event: "Vision Pro发布"
+      status: "完成"
+    - year: 2026
+      event: "Vision Pro二代发布"
+      status: "预期"
+    - year: 2027
+      event: "AR眼镜消费级突破"
+      status: "目标"
+    - year: 2028
+      event: "空间计算渗透率10%"
+      status: "目标"
