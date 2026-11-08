@@ -216,6 +216,7 @@ A股:
     layer: "生物反应器与发酵"
     description: "德国生物工艺设备+过滤龙头"
     market: "XETRA"
+    tv_symbol: "XETR:SRT3"   # scanner 不收录 SART.DE 普通股，改用优先股代码（实证 2026-11-08）
     tags: ["设备", "过滤", "生物工艺"]
 
   - code: "MRK.DE"
@@ -230,6 +231,7 @@ A股:
     layer: "菌株与酶工程"
     description: "原Novozymes，全球最大工业酶公司"
     market: "Copenhagen"
+    # 哥本哈根交易所不在 TV scanner 覆盖范围（实证 2026-11-08），本条走 Yahoo 源
     tags: ["工业酶", "酶制剂巨头", "丹麦"]
 
   - code: "DSM.AS"
@@ -237,6 +239,7 @@ A股:
     layer: "终端应用"
     description: "荷兰营养素/香精/生物基材料"
     market: "Euronext"
+    tv_symbol: "EURONEXT:DSFIR"   # 合并后 TV 代码已变更（实证 2026-11-08）
     tags: ["营养素", "香精", "生物基"]
 
   - code: "EVK.DE"

@@ -1,5 +1,5 @@
 # 估值数据
-# 自动生成时间：2026-11-08 15:55:50
+# 自动生成时间：2026-11-08 16:09:13
 # 数据源：Yahoo Finance
 # 下次更新：2026-11-15
 
@@ -229,6 +229,15 @@ valuation:
     yoy_return: 15.81
     tv_rating: -0.56
     notes: TradingView更新于 2026-11-08 (SZSE:300487)
+  SART.DE:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 200.18
+    current_price: 290
+    yoy_return: 27.81
+    tv_rating: 0.4
+    notes: TradingView更新于 2026-11-08 (XETR:SRT3)
   MRK.DE:
     pe: null
     ps: null
@@ -238,6 +247,15 @@ valuation:
     yoy_return: 34.19
     tv_rating: 0.49
     notes: TradingView更新于 2026-11-08 (XETR:MRK)
+  DSM.AS:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 288.78
+    current_price: 109.8
+    yoy_return: 56.63
+    tv_rating: 0.26
+    notes: TradingView更新于 2026-11-08 (EURONEXT:DSFIR)
   EVK.DE:
     pe: null
     ps: null
