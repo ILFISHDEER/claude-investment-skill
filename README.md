@@ -1,5 +1,9 @@
 # Investment Skill 使用手册
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![Powered by Claude](https://img.shields.io/badge/Powered_by-Claude-7C3AED.svg)](https://claude.com/claude-code)
+
 ---
 skill_version: 2.6
 last_updated: 2026-05-24
