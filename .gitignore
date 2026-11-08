@@ -6,9 +6,12 @@ __pycache__/
 .Python
 *.egg-info/
 
-# Obsidian
-.obsidian/workspace.json
-.obsidian/graph.json
+# Obsidian (local editor config, not project content)
+.obsidian/
+
+# Local agent session & data (personal, do not publish)
+.claude/
+.claudian/
 
 # Output files (generated reports, do not track)
 output/
@@ -18,3 +21,12 @@ output/
 .DS_Store
 Thumbs.db
 *.tmp
+
+# Backup files
+*.backup
+
+
+
+
+# Ignore Smart Environment folder
+.smart-env

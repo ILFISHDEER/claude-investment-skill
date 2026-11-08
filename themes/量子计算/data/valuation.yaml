@@ -1,83 +1,115 @@
-# 量子计算方向 — 估值数据
-# 每周更新
-
-valuation_date: "2026-05-24"
-
-tickers:
+stocks:
   IBM:
-    price: 220.0
-    pe: 25.0
-    pb: 8.0
-    market_cap: "200B"
-    status: "合理"
-
+    price: 252.96
+    pe: 22.366047
+    pb: 7.21033
+    market_cap: 237753401344
+    52w_high: 320.7
+    52w_low: 212.34
+    updated_at: '2026-05-27T21:34:57.486372'
   GOOGL:
-    price: 165.0
-    pe: 28.0
-    pb: 6.0
-    market_cap: "2000B"
-    status: "合理"
-
+    price: 387.16
+    pe: 29.531656
+    pb: 9.798046
+    market_cap: 4690615468032
+    52w_high: 408.61
+    52w_low: 161.64
+    updated_at: '2026-05-27T21:34:58.235191'
   MSFT:
-    price: 420.0
-    pe: 35.0
-    pb: 12.0
-    market_cap: "3100B"
-    status: "偏高"
-
+    price: 412.14
+    pe: 24.517254
+    pb: 7.3889775
+    market_cap: 3061518172160
+    52w_high: 551.05
+    52w_low: 355.51
+    updated_at: '2026-05-27T21:34:59.193644'
   AMZN:
-    price: 195.0
-    pe: 60.0
-    pb: 8.0
-    market_cap: "2000B"
-    status: "偏高"
-
+    price: 266.17
+    pe: 31.763721
+    pb: 6.4775023
+    market_cap: 2863327346688
+    52w_high: 278.56
+    52w_low: 196.0
+    updated_at: '2026-05-27T21:34:59.938225'
   NVDA:
-    price: 125.0
-    pe: 65.0
-    pb: 50.0
-    market_cap: "3000B"
-    status: "偏高"
-
+    price: 211.88
+    pe: 32.447166
+    pb: 32.73795
+    market_cap: 5131945377792
+    52w_high: 236.54
+    52w_low: 132.89
+    updated_at: '2026-05-27T21:35:00.712433'
   IONQ:
-    price: 42.0
-    pe: null
-    pb: 15.0
-    market_cap: "8B"
-    status: "投机"
-
+    price: 62.16
+    pe: 159.38463
+    pb: 4.661767
+    market_cap: 23202459648
+    52w_high: 84.64
+    52w_low: 25.89
+    updated_at: '2026-05-27T21:35:01.448478'
   RGTI:
-    price: 18.0
-    pe: null
-    pb: 8.0
-    market_cap: "4B"
-    status: "投机"
-
+    price: 24.4
+    pe: 0
+    pb: 13.883826
+    market_cap: 8103882752
+    52w_high: 58.15
+    52w_low: 10.3
+    updated_at: '2026-05-27T21:35:02.377067'
   QBTS:
-    price: 1.2
-    pe: null
-    pb: 5.0
-    market_cap: "0.3B"
-    status: "投机"
-
+    price: 26.87
+    pe: 0
+    pb: 11.304714
+    market_cap: 9950157824
+    52w_high: 46.75
+    52w_low: 12.75
+    updated_at: '2026-05-27T21:35:03.158170'
   FORM:
-    price: 38.0
-    pe: 25.0
-    pb: 4.0
-    market_cap: "3B"
-    status: "合理"
-
+    price: 133.5
+    pe: 153.44827
+    pb: 9.8291855
+    market_cap: 10406961152
+    52w_high: 159.09
+    52w_low: 26.08
+    updated_at: '2026-05-27T21:35:04.183710'
   KEYS:
-    price: 155.0
-    pe: 22.0
-    pb: 6.0
-    market_cap: "28B"
-    status: "合理"
-
-# A股
-  "688027.SS":
-    price: 185.0
-    pe: null
-    pb: 8.0
-    market_cap: "150亿"
-    status: "投机"
+    price: 353.81
+    pe: 56.791332
+    pb: 9.556492
+    market_cap: 60408987648
+    52w_high: 370.17
+    52w_low: 152.85
+    updated_at: '2026-05-27T21:35:05.161134'
+  688027.SS:
+    price: 584.54
+    pe: 9742.333
+    pb: 18.637291
+    market_cap: 60126367744
+    52w_high: 760.86
+    52w_low: 240.22
+    updated_at: '2026-05-27T21:35:06.043207'
+  000555.SZ:
+    price: 13.13
+    pe: 218.83334
+    pb: 2.2409966
+    market_cap: 12811918336
+    52w_high: 23.01
+    52w_low: 10.9
+    updated_at: '2026-05-27T21:35:06.976777'
+  300520.SZ:
+    price: 37.48
+    pe: 0
+    pb: 6.2248797
+    market_cap: 10945321984
+    52w_high: 55.26
+    52w_low: 22.34
+    updated_at: '2026-05-27T21:35:07.840945'
+  002281.SZ:
+    price: 202.7
+    pe: 155.92308
+    pb: 15.812466
+    market_cap: 163513171968
+    52w_high: 246.8
+    52w_low: 40.3
+    updated_at: '2026-05-27T21:35:08.875625'
+last_updated: '2026-05-27T21:35:08.892869'
+data_source: yahoo-finance-mcp

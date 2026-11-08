@@ -1,0 +1,284 @@
+{
+  "entities": [
+    {
+      "name": "孙哥方向",
+      "entityType": "投资主题",
+      "observations": [
+        "7大细分方向：存储、具身智能、无人机、空间计算、太空探索、能源、量子计算",
+        "主题ID: sun-ge-direction",
+        "核心逻辑：AI+硬科技产业链全景",
+        "配置文件: themes/孙哥方向/config.yaml"
+      ]
+    },
+    {
+      "name": "新能源",
+      "entityType": "投资主题",
+      "observations": [
+        "专注电池/储能产业链",
+        "代表标的: 宁德时代、比亚迪",
+        "关注政策催化和技术迭代"
+      ]
+    },
+    {
+      "name": "量子计算",
+      "entityType": "投资主题",
+      "observations": [
+        "孙哥方向第7细分方向",
+        "下一代算力底座",
+        "代表标的: IonQ、Rigetti、本源量子(未上市)",
+        "铲子股: FormFactor(测试设备)"
+      ]
+    },
+    {
+      "name": "03-产业链拆解",
+      "entityType": "分析模块",
+      "observations": [
+        "层级: Layer 2",
+        "功能: 七层产业链拆解、IC Score评分",
+        "Agent: IndustryChainAgent",
+        "输入: 主题配置+市场数据",
+        "输出: 产业链图谱",
+        "依赖: 00-市场情绪分析"
+      ]
+    },
+    {
+      "name": "04-铲子股筛选",
+      "entityType": "分析模块",
+      "observations": [
+        "层级: Layer 3",
+        "功能: 基于IC Score筛选核心铲子股",
+        "Agent: ShovelStockAgent",
+        "依赖: 03-产业链拆解、15-产业链全景图谱",
+        "评分维度: I/C/T/S/M五维度",
+        "输出: 筛选清单+仓位建议"
+      ]
+    },
+    {
+      "name": "05-护城河评估",
+      "entityType": "分析模块",
+      "observations": [
+        "层级: Layer 3",
+        "功能: 竞争壁垒评估",
+        "Agent: 默认提示词",
+        "依赖: 04-铲子股筛选",
+        "框架: 晨星护城河评级"
+      ]
+    },
+    {
+      "name": "09-组合构建",
+      "entityType": "分析模块",
+      "observations": [
+        "层级: Layer 3",
+        "功能: 仓位配置、价格计算",
+        "Agent: PortfolioConstructionAgent",
+        "依赖: 05-护城河评估、08-风险矩阵",
+        "输出: 组合方案"
+      ]
+    },
+    {
+      "name": "晨星护城河评级",
+      "entityType": "分析框架",
+      "observations": [
+        "评估公司竞争壁垒",
+        "文件: frameworks/晨星护城河评级.md",
+        "应用于模块05",
+        "评估维度: 无形资产、成本优势、网络效应、转换成本"
+      ]
+    },
+    {
+      "name": "费雪成长股原则",
+      "entityType": "分析框架",
+      "observations": [
+        "成长股筛选方法论",
+        "15个成长股特征",
+        "关注: 成长潜力、管理能力、盈利能力"
+      ]
+    },
+    {
+      "name": "股票库维护规则",
+      "entityType": "分析框架",
+      "observations": [
+        "股票池动态管理机制",
+        "6维度评分: 价格表现20%、估值健康20%、财务质量20%、技术地位20%、催化剂10%、风险状况10%",
+        "红黄灯预警机制",
+        "季度审议剔除/纳入"
+      ]
+    },
+    {
+      "name": "IndustryChainAgent",
+      "entityType": "AI Agent",
+      "observations": [
+        "专长: 产业链拆解、IC Score",
+        "对应模块: 03",
+        "文件: agents/IndustryChainAgent.md",
+        "输出: 产业链图谱+IC Score"
+      ]
+    },
+    {
+      "name": "ShovelStockAgent",
+      "entityType": "AI Agent",
+      "observations": [
+        "专长: 铲子股筛选、仓位配置",
+        "对应模块: 04",
+        "文件: agents/ShovelStockAgent.md"
+      ]
+    },
+    {
+      "name": "PortfolioConstructionAgent",
+      "entityType": "AI Agent",
+      "observations": [
+        "专长: 组合构建、价格计算",
+        "对应模块: 09",
+        "文件: agents/PortfolioConstructionAgent.md"
+      ]
+    },
+    {
+      "name": "MarketSentimentAgent",
+      "entityType": "AI Agent",
+      "observations": [
+        "专长: VIX分析、资金流向",
+        "对应模块: 00",
+        "文件: agents/MarketSentimentAgent.md",
+        "输出: 情绪判断"
+      ]
+    },
+    {
+      "name": "NVDA",
+      "entityType": "投资标的",
+      "observations": [
+        "英伟达",
+        "所属主题: 孙哥方向-存储/AI芯片",
+        "商业模式: AI芯片设计",
+        "技术壁垒: CUDA生态、GPU架构",
+        "铲子属性: 无论AI应用谁赢都需要英伟达芯片"
+      ]
+    },
+    {
+      "name": "TSLA",
+      "entityType": "投资标的",
+      "observations": [
+        "特斯拉",
+        "所属主题: 孙哥方向-具身智能",
+        "商业模式: 电动车+自动驾驶+机器人",
+        "技术壁垒: FSD算法、垂直整合"
+      ]
+    },
+    {
+      "name": "绿的谐波",
+      "entityType": "投资标的",
+      "observations": [
+        "688017.SH(科创板)",
+        "所属主题: 孙哥方向-具身智能",
+        "主营业务: 精密谐波减速器",
+        "铲子属性: 人形机器人核心零部件",
+        "IC Score: 高(I-唯一国产替代、C-绑定头部)"
+      ]
+    },
+    {
+      "name": "IC Score",
+      "entityType": "评分机制",
+      "observations": [
+        "铲子股筛选核心逻辑",
+        "I-不可替代性30%: 唯一供应商40分/TOP3 30分/有替代10分",
+        "C-客户集中度25%: 绑定头部25分/二线15分",
+        "T-技术壁垒20%: 按领先程度0-20分",
+        "S-市场规模15%: 按赛道空间0-15分",
+        "M-管理层10%: 按治理财报质量0-10分",
+        "评级: ≥70分=A级 / 60-69分=B级 / <60分=C级"
+      ]
+    },
+    {
+      "name": "存储产业链",
+      "entityType": "产业链",
+      "observations": [
+        "孙哥方向第1细分",
+        "核心逻辑: 永远缺存储",
+        "上游: HBM芯片(英伟达)、存储颗粒(美光/三星)",
+        "中游: 模组厂商",
+        "下游: AI服务器、手机、PC"
+      ]
+    },
+    {
+      "name": "具身智能产业链",
+      "entityType": "产业链",
+      "observations": [
+        "孙哥方向第2细分",
+        "核心逻辑: 身体与大脑分开押",
+        "关键部件: 减速器、电机、传感器、丝杠",
+        "代表公司: 绿的谐波、三花智控、鸣志电器"
+      ]
+    },
+    {
+      "name": "量子计算产业链",
+      "entityType": "产业链",
+      "observations": [
+        "孙哥方向第7细分",
+        "技术路线: 离子阱(IonQ)、超导(Rigetti)、光量子",
+        "铲子股: FormFactor(测试设备)、低温系统",
+        "应用层: 金融、医药、材料"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "孙哥方向",
+      "to": "存储产业链",
+      "relationType": "包含"
+    },
+    {
+      "from": "孙哥方向",
+      "to": "具身智能产业链",
+      "relationType": "包含"
+    },
+    {
+      "from": "孙哥方向",
+      "to": "量子计算产业链",
+      "relationType": "包含"
+    },
+    {
+      "from": "存储产业链",
+      "to": "NVDA",
+      "relationType": "核心标的"
+    },
+    {
+      "from": "具身智能产业链",
+      "to": "绿的谐波",
+      "relationType": "核心标的"
+    },
+    {
+      "from": "具身智能产业链",
+      "to": "TSLA",
+      "relationType": "终端应用"
+    },
+    {
+      "from": "04-铲子股筛选",
+      "to": "IC Score",
+      "relationType": "使用"
+    },
+    {
+      "from": "04-铲子股筛选",
+      "to": "03-产业链拆解",
+      "relationType": "依赖"
+    },
+    {
+      "from": "ShovelStockAgent",
+      "to": "04-铲子股筛选",
+      "relationType": "执行"
+    },
+    {
+      "from": "IndustryChainAgent",
+      "to": "03-产业链拆解",
+      "relationType": "执行"
+    },
+    {
+      "from": "05-护城河评估",
+      "to": "晨星护城河评级",
+      "relationType": "应用"
+    },
+    {
+      "from": "PortfolioConstructionAgent",
+      "to": "09-组合构建",
+      "relationType": "执行"
+    }
+  ]
+}

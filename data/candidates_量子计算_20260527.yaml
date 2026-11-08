@@ -1,0 +1,275 @@
+theme: 量子计算
+generated_at: '2026-05-27T21:49:16.407494'
+count: 30
+candidates:
+- symbol: AMAT
+  name: Applied Materials, Inc.
+  market: US
+  market_cap_b: 354.37
+  pe_ratio: 41.948776
+  industry: Semiconductors
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Semiconductors | 量子计算产业链 - 铲子股/半导体设备 | ^NDX constituent'
+  confidence: 0.85
+- symbol: LRCX
+  name: Lam Research Corporation
+  market: US
+  market_cap_b: 399.31
+  pe_ratio: 60.359165
+  industry: Semiconductors
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Semiconductors | 量子计算产业链 - 铲子股/半导体设备 | ^NDX constituent'
+  confidence: 0.85
+- symbol: KLAC
+  name: KLA Corporation
+  market: US
+  market_cap_b: 258.91
+  pe_ratio: 55.990112
+  industry: Semiconductors
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Semiconductors | 量子计算产业链 - 铲子股/半导体设备 | ^NDX constituent'
+  confidence: 0.85
+- symbol: ASML
+  name: ASML Holding N.V. - New York Re
+  market: US
+  market_cap_b: 618.33
+  pe_ratio: 53.423244
+  industry: Semiconductors
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Semiconductors | 量子计算产业链 - 铲子股/半导体设备'
+  confidence: 0.85
+- symbol: TER
+  name: Teradyne, Inc.
+  market: US
+  market_cap_b: 58.87
+  pe_ratio: 69.51016
+  industry: 半导体设备
+  discovery_source: industry_chain
+  discovery_reason: 量子计算产业链 - 铲子股/半导体设备 | 量子计算产业链 - 铲子股/测试设备
+  confidence: 0.85
+- symbol: FORM
+  name: FormFactor, Inc.
+  market: US
+  market_cap_b: 10.23
+  pe_ratio: 150.83908
+  industry: 测试设备
+  discovery_source: industry_chain
+  discovery_reason: 量子计算产业链 - 铲子股/测试设备
+  confidence: 0.85
+- symbol: KEYS
+  name: Keysight Technologies Inc.
+  market: US
+  market_cap_b: 59.9
+  pe_ratio: 56.312202
+  industry: 测试设备
+  discovery_source: industry_chain
+  discovery_reason: 量子计算产业链 - 铲子股/测试设备
+  confidence: 0.85
+- symbol: IBM
+  name: International Business Machines
+  market: US
+  market_cap_b: 239.05
+  pe_ratio: 22.488062
+  industry: Information Technology Services
+  discovery_source: etf_holdings
+  discovery_reason: Top 1 holding in QTUM (8.50%)
+  confidence: 0.8
+- symbol: GOOGL
+  name: Alphabet Inc.
+  market: US
+  market_cap_b: 4712.0
+  pe_ratio: 29.666285
+  industry: Technology
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Technology | Top 2 holding in QTUM (7.20%) | ^NDX constituent'
+  confidence: 0.78
+- symbol: MSFT
+  name: Microsoft Corporation
+  market: US
+  market_cap_b: 3065.86
+  pe_ratio: 24.552053
+  industry: Technology
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Technology | Top 3 holding in QTUM (6.80%) | ^NDX constituent'
+  confidence: 0.76
+- symbol: NVDA
+  name: NVIDIA Corporation
+  market: US
+  market_cap_b: 5119.59
+  pe_ratio: 32.369064
+  industry: Semiconductors
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Semiconductors | Top 4 holding in QTUM (6.50%) | ^NDX
+    constituent'
+  confidence: 0.75
+- symbol: AMD
+  name: Advanced Micro Devices, Inc.
+  market: US
+  market_cap_b: 808.75
+  pe_ratio: 164.2318
+  industry: Semiconductors
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Semiconductors | ^NDX constituent'
+  confidence: 0.75
+- symbol: INTC
+  name: Intel Corporation
+  market: US
+  market_cap_b: 593.22
+  pe_ratio: null
+  industry: Semiconductors
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Semiconductors | ^NDX constituent'
+  confidence: 0.75
+- symbol: QCOM
+  name: QUALCOMM Incorporated
+  market: US
+  market_cap_b: 245.14
+  pe_ratio: 24.981739
+  industry: Semiconductors
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Semiconductors | ^NDX constituent'
+  confidence: 0.75
+- symbol: MU
+  name: Micron Technology, Inc.
+  market: US
+  market_cap_b: 1032.88
+  pe_ratio: 43.14131
+  industry: Semiconductors
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Semiconductors | ^NDX constituent'
+  confidence: 0.75
+- symbol: META
+  name: Meta Platforms, Inc.
+  market: US
+  market_cap_b: 1549.64
+  pe_ratio: 22.207165
+  industry: Technology
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Technology | ^NDX constituent'
+  confidence: 0.75
+- symbol: AMZN
+  name: Amazon.com, Inc.
+  market: US
+  market_cap_b: 2880.22
+  pe_ratio: 31.951073
+  industry: Technology
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Technology | ^NDX constituent'
+  confidence: 0.75
+- symbol: ADBE
+  name: Adobe Inc.
+  market: US
+  market_cap_b: 98.03
+  pe_ratio: 14.124637
+  industry: Technology
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Technology | ^NDX constituent'
+  confidence: 0.75
+- symbol: AAPL
+  name: Apple Inc.
+  market: US
+  market_cap_b: 4567.55
+  pe_ratio: 37.649513
+  industry: Consumer Electronics
+  discovery_source: index_constituents
+  discovery_reason: ^NDX constituent
+  confidence: 0.75
+- symbol: TSLA
+  name: Tesla, Inc.
+  market: US
+  market_cap_b: 1644.71
+  pe_ratio: 405.48135
+  industry: Auto Manufacturers
+  discovery_source: index_constituents
+  discovery_reason: ^NDX constituent
+  confidence: 0.75
+- symbol: NFLX
+  name: Netflix, Inc.
+  market: US
+  market_cap_b: 369.1
+  pe_ratio: 28.275806
+  industry: Entertainment
+  discovery_source: index_constituents
+  discovery_reason: ^NDX constituent
+  confidence: 0.75
+- symbol: PYPL
+  name: PayPal Holdings, Inc.
+  market: US
+  market_cap_b: 39.09
+  pe_ratio: 8.313321
+  industry: Credit Services
+  discovery_source: index_constituents
+  discovery_reason: ^NDX constituent
+  confidence: 0.75
+- symbol: CSCO
+  name: Cisco Systems, Inc.
+  market: US
+  market_cap_b: 468.74
+  pe_ratio: 39.509968
+  industry: Communication Equipment
+  discovery_source: index_constituents
+  discovery_reason: ^NDX constituent
+  confidence: 0.75
+- symbol: AVGO
+  name: Broadcom Inc.
+  market: US
+  market_cap_b: 2009.27
+  pe_ratio: 82.40291
+  industry: Semiconductors
+  discovery_source: index_constituents
+  discovery_reason: ^NDX constituent
+  confidence: 0.75
+- symbol: TXN
+  name: Texas Instruments Incorporated
+  market: US
+  market_cap_b: 289.25
+  pe_ratio: 54.329063
+  industry: Semiconductors
+  discovery_source: index_constituents
+  discovery_reason: ^NDX constituent
+  confidence: 0.75
+- symbol: IONQ
+  name: IonQ, Inc.
+  market: US
+  market_cap_b: 22.56
+  pe_ratio: 154.96155
+  industry: Computer Hardware
+  discovery_source: etf_holdings
+  discovery_reason: Top 5 holding in QTUM (5.20%)
+  confidence: 0.7200000000000001
+- symbol: RGTI
+  name: Rigetti Computing, Inc.
+  market: US
+  market_cap_b: 7.97
+  pe_ratio: null
+  industry: Computer Hardware
+  discovery_source: etf_holdings
+  discovery_reason: Top 6 holding in QTUM (4.80%)
+  confidence: 0.7000000000000001
+- symbol: TSM
+  name: Taiwan Semiconductor Manufactur
+  market: US
+  market_cap_b: 2189.37
+  pe_ratio: 36.048676
+  industry: Semiconductors
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Semiconductors'
+  confidence: 0.7
+- symbol: CRM
+  name: Salesforce, Inc.
+  market: US
+  market_cap_b: 149.65
+  pe_ratio: 23.422535
+  industry: Technology
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Technology'
+  confidence: 0.7
+- symbol: ORCL
+  name: Oracle Corporation
+  market: US
+  market_cap_b: 545.59
+  pe_ratio: 33.996414
+  industry: Technology
+  discovery_source: yahoo_screener
+  discovery_reason: 'Industry: Technology'
+  confidence: 0.7

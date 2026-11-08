@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "孙哥方向",
+      "entityType": "投资主题",
+      "observations": [
+        "包含7大细分方向：存储、具身智能、无人机、空间计算、太空探索、能源、量子计算",
+        "主题ID: sun-ge-direction",
+        "配置路径: themes/孙哥方向/config.yaml",
+        "股票数据存储在 themes/孙哥方向/data/ 目录",
+        "核心标的包括：英伟达、特斯拉、绿的谐波等"
+      ]
+    },
+    {
+      "name": "新能源",
+      "entityType": "投资主题",
+      "observations": [
+        "专注于电池/储能产业链",
+        "包含宁德时代、比亚迪等标的",
+        "关注储能技术迭代和政策催化"
+      ]
+    },
+    {
+      "name": "03-产业链拆解",
+      "entityType": "分析模块",
+      "observations": [
+        "层级：Layer 2",
+        "功能：七层产业链拆解、IC Score 评分",
+        "输出：产业链图谱、铲子股筛选输入",
+        "依赖：00-市场情绪分析Agent",
+        "Agent：IndustryChainAgent"
+      ]
+    },
+    {
+      "name": "04-铲子股筛选",
+      "entityType": "分析模块",
+      "observations": [
+        "层级：Layer 3",
+        "功能：基于IC Score筛选核心铲子股",
+        "依赖：03-产业链拆解、15-产业链全景图谱",
+        "评分维度：不可替代性(I)、客户集中度(C)、技术壁垒(T)、市场规模(S)、管理层(M)",
+        "Agent：ShovelStockAgent"
+      ]
+    },
+    {
+      "name": "晨星护城河评级",
+      "entityType": "分析框架",
+      "observations": [
+        "评估公司竞争壁垒",
+        "框架文件: frameworks/晨星护城河评级.md",
+        "应用于模块05-护城河评估",
+        "用于评估股票的长期竞争力"
+      ]
+    },
+    {
+      "name": "费雪成长股原则",
+      "entityType": "分析框架",
+      "observations": [
+        "成长股筛选方法论",
+        "框架文件: frameworks/费雪成长股原则.md",
+        "关注15个成长股特征",
+        "适用于高增长主题投资"
+      ]
+    },
+    {
+      "name": "股票库维护规则",
+      "entityType": "分析框架",
+      "observations": [
+        "股票池动态管理机制",
+        "评分体系：6维度100分制",
+        "红黄灯预警机制",
+        "每季度审议剔除/纳入"
+      ]
+    },
+    {
+      "name": "IndustryChainAgent",
+      "entityType": "AI Agent",
+      "observations": [
+        "专长：产业链拆解、IC Score评分",
+        "对应模块：03-产业链拆解",
+        "独立文件: agents/IndustryChainAgent.md",
+        "输入：主题配置+市场数据",
+        "输出：产业链图谱"
+      ]
+    },
+    {
+      "name": "ShovelStockAgent",
+      "entityType": "AI Agent",
+      "observations": [
+        "专长：铲子股筛选逻辑、仓位配置",
+        "对应模块：04-铲子股筛选",
+        "独立文件: agents/ShovelStockAgent.md",
+        "输入：产业链输出",
+        "输出：筛选清单"
+      ]
+    },
+    {
+      "name": "PortfolioConstructionAgent",
+      "entityType": "AI Agent",
+      "observations": [
+        "专长：组合构建、仓位配置、价格计算",
+        "对应模块：09-组合构建",
+        "独立文件: agents/PortfolioConstructionAgent.md",
+        "输入：护城河评估+风险矩阵输出",
+        "输出：组合方案"
+      ]
+    },
+    {
+      "name": "NVDA",
+      "entityType": "投资标的",
+      "observations": [
+        "股票名称: 英伟达",
+        "所属主题: 孙哥方向-存储/AI芯片",
+        "商业模式: AI芯片设计",
+        "技术壁垒: CUDA生态、GPU架构领先",
+        "core_logic文件: themes/孙哥方向/data/core_logic/存储方向.md",
+        "铲子属性: 无论AI应用谁赢，都需要英伟达芯片"
+      ]
+    },
+    {
+      "name": "TSLA",
+      "entityType": "投资标的",
+      "observations": [
+        "股票名称: 特斯拉",
+        "所属主题: 孙哥方向-具身智能",
+        "商业模式: 电动车+自动驾驶+机器人",
+        "技术壁垒: FSD算法、垂直整合能力",
+        "铲子属性: 机器人产业链终端应用"
+      ]
+    },
+    {
+      "name": "IC Score",
+      "entityType": "评分机制",
+      "observations": [
+        "铲子股筛选核心逻辑",
+        "5维度评分: I(不可替代性30%)、C(客户集中度25%)、T(技术壁垒20%)、S(市场规模15%)、M(管理层10%)",
+        "评级门槛: ≥70分=A级(核心铲子股) / 60-69分=B级 / <60分=C级",
+        "应用于模块04-铲子股筛选"
+      ]
+    },
+    {
+      "name": "存储方向",
+      "entityType": "产业链节点",
+      "observations": [
+        "孙哥方向第1细分方向",
+        "核心逻辑: 永远缺存储",
+        "代表标的: 英伟达(HBM)、美光、三星",
+        "产业链位置: 上游-芯片设计"
+      ]
+    },
+    {
+      "name": "具身智能",
+      "entityType": "产业链节点",
+      "observations": [
+        "孙哥方向第2细分方向",
+        "核心逻辑: 身体与大脑分开押",
+        "代表标的: 特斯拉、绿的谐波、三花智控",
+        "产业链: 减速器、电机、传感器等"
+      ]
+    }
+  ]
+}
