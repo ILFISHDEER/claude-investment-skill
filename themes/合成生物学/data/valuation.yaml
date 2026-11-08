@@ -1,251 +1,249 @@
-# 合成生物学主题 — 估值数据
-# 注：以下为占位数据，生成报告前需运行 update_data.py 更新
+# 估值数据
+# 自动生成时间：2026-11-08 15:55:50
+# 数据源：Yahoo Finance
+# 下次更新：2026-11-15
 
-meta:
-  theme: "合成生物学"
-  last_updated: "2026-05-25"
-  data_source: "手动填充/待更新"
-
-# === 美股 ===
-TWST:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-DNA:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-ILMN:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-TXG:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-CDXS:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-SANA:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-NTLA:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-MRNA:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-BNTX:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-RXRX:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-# === 港股 ===
-2269.HK:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-1548.HK:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-3759.HK:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-2155.HK:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-# === A股 (人民币/亿人民币) ===
-688114.SS:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "⚠️科创板，待更新"
-
-688690.SS:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "⚠️科创板，待更新"
-
-300171.SZ:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-300358.SZ:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-688639.SS:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "⚠️科创板，待更新"
-
-688065.SS:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "⚠️科创板，待更新"
-
-600873.SS:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-301301.SZ:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-603739.SS:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-688089.SS:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "⚠️科创板，待更新"
-
-300487.SZ:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-# === 欧洲 ===
-SART.DE:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-MRK.DE:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-NZYM-B.CO:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-DSM.AS:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
-
-EVK.DE:
-  pe: null
-  ps: null
-  market_cap: null
-  price: null
-  yoy_return: null
-  note: "待更新"
+valuation:
+  TWST:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 79.52
+    current_price: 120.79
+    yoy_return: 290.91
+    tv_rating: -0.27
+    notes: TradingView更新于 2026-11-08 (NASDAQ:TWST)
+  DNA:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 7.6
+    current_price: 11.29
+    yoy_return: -2.67
+    tv_rating: 0.45
+    notes: TradingView更新于 2026-11-08 (NYSE:DNA)
+  ILMN:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 322.25
+    current_price: 213.13
+    yoy_return: 74.01
+    tv_rating: -0.18
+    notes: TradingView更新于 2026-11-08 (NASDAQ:ILMN)
+  TXG:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 77.24
+    current_price: 59.28
+    yoy_return: 350.46
+    tv_rating: -0.31
+    notes: TradingView更新于 2026-11-08 (NASDAQ:TXG)
+  CDXS:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 1.18
+    current_price: 1.08
+    yoy_return: -49.53
+    tv_rating: -0.35
+    notes: TradingView更新于 2026-11-08 (NASDAQ:CDXS)
+  SANA:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 7.09
+    current_price: 2.37
+    yoy_return: -41.04
+    tv_rating: -0.42
+    notes: TradingView更新于 2026-11-08 (NASDAQ:SANA)
+  NTLA:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 15.9
+    current_price: 11.35
+    yoy_return: -15.93
+    tv_rating: -0.45
+    notes: TradingView更新于 2026-11-08 (NASDAQ:NTLA)
+  MRNA:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 1014.82
+    current_price: 254.19
+    yoy_return: 907.09
+    tv_rating: 0.49
+    notes: TradingView更新于 2026-11-08 (NASDAQ:MRNA)
+  BNTX:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 227.84
+    current_price: 87.51
+    yoy_return: -15.44
+    tv_rating: -0.42
+    notes: TradingView更新于 2026-11-08 (NASDAQ:BNTX)
+  RXRX:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 21.94
+    current_price: 3.52
+    yoy_return: -29.32
+    tv_rating: -0.38
+    notes: TradingView更新于 2026-11-08 (NASDAQ:RXRX)
+  2269.HK:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 253.47
+    current_price: 47.62
+    yoy_return: 35.98
+    tv_rating: -0.11
+    notes: TradingView更新于 2026-11-08 (HKEX:2269)
+  1548.HK:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 98.46
+    current_price: 30.38
+    yoy_return: 85.36
+    tv_rating: -0.34
+    notes: TradingView更新于 2026-11-08 (HKEX:1548)
+  3759.HK:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 114.22
+    current_price: 29.14
+    yoy_return: 17.5
+    tv_rating: 0.4
+    notes: TradingView更新于 2026-11-08 (HKEX:3759)
+  2155.HK:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 11.27
+    current_price: 6.35
+    yoy_return: -34.74
+    tv_rating: -0.45
+    notes: TradingView更新于 2026-11-08 (HKEX:2155)
+  688114.SS:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 32.69
+    current_price: 55.4
+    yoy_return: -17.07
+    tv_rating: -0.42
+    notes: TradingView更新于 2026-11-08 (SSE:688114)
+  688690.SS:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 24.19
+    current_price: 38.1
+    yoy_return: 31.47
+    tv_rating: -0.42
+    notes: TradingView更新于 2026-11-08 (SSE:688690)
+  300171.SZ:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 15.9
+    current_price: 13.69
+    yoy_return: -19.04
+    tv_rating: -0.54
+    notes: TradingView更新于 2026-11-08 (SZSE:300171)
+  300358.SZ:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 9.81
+    current_price: 9.03
+    yoy_return: -22.16
+    tv_rating: 0.13
+    notes: TradingView更新于 2026-11-08 (SZSE:300358)
+  688639.SS:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 6.52
+    current_price: 16.9
+    yoy_return: -51.01
+    tv_rating: -0.11
+    notes: TradingView更新于 2026-11-08 (SSE:688639)
+  688065.SS:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 40.69
+    current_price: 39.03
+    yoy_return: -18.7
+    tv_rating: 0.02
+    notes: TradingView更新于 2026-11-08 (SSE:688065)
+  600873.SS:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 29.49
+    current_price: 7.25
+    yoy_return: -35.56
+    tv_rating: -0.27
+    notes: TradingView更新于 2026-11-08 (SSE:600873)
+  301301.SZ:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 26.67
+    current_price: 8.07
+    yoy_return: -29.4
+    tv_rating: 0.07
+    notes: TradingView更新于 2026-11-08 (SZSE:301301)
+  603739.SS:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 4.49
+    current_price: 11.86
+    yoy_return: -25.03
+    tv_rating: -0.54
+    notes: TradingView更新于 2026-11-08 (SSE:603739)
+  688089.SS:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 1.9
+    current_price: 7.66
+    yoy_return: -67.68
+    tv_rating: -0.54
+    notes: TradingView更新于 2026-11-08 (SSE:688089)
+  300487.SZ:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 49.25
+    current_price: 62.5
+    yoy_return: 15.81
+    tv_rating: -0.56
+    notes: TradingView更新于 2026-11-08 (SZSE:300487)
+  MRK.DE:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 734.43
+    current_price: 148.75
+    yoy_return: 34.19
+    tv_rating: 0.49
+    notes: TradingView更新于 2026-11-08 (XETR:MRK)
+  EVK.DE:
+    pe: null
+    ps: null
+    ev_ebitda: null
+    market_cap: 111.76
+    current_price: 21.12
+    yoy_return: 49.05
+    tv_rating: 0.04
+    notes: TradingView更新于 2026-11-08 (XETR:EVK)
