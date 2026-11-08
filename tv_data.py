@@ -75,11 +75,9 @@ def 获取股票数据(代码, 覆盖=None):
 
             市值 = d.get("market_cap_basic")
             if 市值:
-                if 大写 := 代码.upper():
-                    if 大写.endswith((".KS", ".KQ")):
-                        市值 = round(市值 / 1300 / 1e8, 2)  # 韩元→美元→亿美元（汇率口径同 update_data）
-                    else:
-                        市值 = round(市值 / 1e8, 2)
+                # 已实证（2026-11-08，对照 Yahoo 币种字段）：scanner 的 market_cap_basic
+                # 统一为美元口径（KRX/HKEX/SSE/SZSE/XETR 均是），无需再按上市地换算
+                市值 = round(市值 / 1e8, 2)
 
             return {
                 'pe': d.get("price_earnings_ttm_basic"),

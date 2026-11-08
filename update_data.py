@@ -139,12 +139,18 @@ def 获取股票数据(代码):
 
         市值 = info.get('marketCap')
         if 市值:
-            # 韩国股市值用韩元计价，需要转换为美元
-            # 汇率：1 USD ≈ 1300 KRW（2026年5月）
-            if 代码.endswith('.KS'):
-                市值 = round(市值 / 1300 / 1e8, 2)  # 韩元→美元→亿美元
-            else:
-                市值 = round(市值 / 1e8, 2)  # 转为亿美元
+            # Yahoo 的 marketCap 以上市地货币计价，需换算为美元
+            # 汇率为近似口径（2026-11-08）；精确市值建议用 tv_data.py（TV 接口统一返回美元）
+            货币汇率 = {
+                '.KS': 1300, '.KQ': 1300,   # 韩元
+                '.HK': 7.8,                  # 港币
+                '.SS': 7.2, '.SZ': 7.2,     # 人民币
+                '.T': 155,                    # 日元
+                '.CO': 6.9,                   # 丹麦克朗
+                '.DE': 1.1, '.AS': 1.1,      # 欧元（近似）
+            }
+            汇率 = next((v for k, v in 货币汇率.items() if 代码.upper().endswith(k)), 1.0)
+            市值 = round(市值 / 汇率 / 1e8, 2)  # 转为亿美元
 
         return {
             'pe': info.get('trailingPE'),
