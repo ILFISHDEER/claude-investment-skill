@@ -29,6 +29,17 @@ if sys.platform == 'win32':
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 
+
+def 解析主题路径(主题名):
+    """主题数据目录解析：优先新架构 themes/<主题>/data，兼容旧架构 data/<主题>"""
+    新路径 = BASE_DIR / "themes" / 主题名 / "data"
+    if 新路径.exists():
+        return 新路径
+    旧路径 = DATA_DIR / 主题名
+    if 旧路径.exists():
+        return 旧路径
+    return None
+
 # A股代码在 Yahoo Finance 的映射规则
 # 上交所代码加 .SS，深交所代码加 .SZ
 A股映射 = {
@@ -151,9 +162,9 @@ def 获取股票数据(代码):
 
 def 更新主题(主题名, dry_run=False):
     """更新单个主题的数据"""
-    主题路径 = DATA_DIR / 主题名
-    if not 主题路径.exists():
-        print(f"❌ 主题不存在: {主题名}")
+    主题路径 = 解析主题路径(主题名)
+    if 主题路径 is None:
+        print(f"❌ 主题不存在（已查找 themes/{主题名}/data 与 data/{主题名}）")
         return False
 
     tickers文件 = 主题路径 / "tickers.yaml"
@@ -172,7 +183,11 @@ def 更新主题(主题名, dry_run=False):
 
     # 遍历所有方向
     for 方向, 公司列表 in tickers.items():
+        if not isinstance(公司列表, list):
+            continue  # 顶层 meta/summary 等非列表键直接跳过
         for 公司 in 公司列表:
+            if not isinstance(公司, dict):
+                continue
             代码 = 公司.get('code', '')
             公司名 = 公司.get('name', '')
             状态 = 公司.get('status', '')
@@ -223,15 +238,19 @@ def 主函数():
         主题名 = args[0]
         更新主题(主题名, dry_run)
     else:
-        # 更新所有主题
-        if not DATA_DIR.exists():
-            print("❌ data/ 目录不存在")
-            return
-
-        主题列表 = [d.name for d in DATA_DIR.iterdir() if d.is_dir()]
+        # 更新所有主题：新架构 themes/<主题>/data 优先，兼容旧架构 data/<主题>
+        主题列表 = []
+        if (BASE_DIR / "themes").exists():
+            主题列表 += [d.name for d in (BASE_DIR / "themes").iterdir()
+                      if d.is_dir() and not d.name.startswith("_")
+                      and (d / "data" / "tickers.yaml").exists()]
+        if DATA_DIR.exists():
+            主题列表 += [d.name for d in DATA_DIR.iterdir()
+                      if d.is_dir() and d.name not in 主题列表
+                      and (d / "tickers.yaml").exists()]
 
         if not 主题列表:
-            print("⚠️  data/ 目录下没有主题")
+            print("⚠️  未发现任何主题（需要 themes/<主题>/data/tickers.yaml 或 data/<主题>/tickers.yaml）")
             return
 
         print(f"发现 {len(主题列表)} 个主题: {', '.join(主题列表)}\n")
