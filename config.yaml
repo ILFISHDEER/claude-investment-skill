@@ -1,0 +1,46 @@
+# Investment Skill — 默认配置
+#
+# 新用户从这里开始：
+#   1. 安装依赖:  pip install yfinance pyyaml requests
+#   2. 更新数据:  python update_data.py 合成生物学
+#   3. 生成报告:  对 AI 说「按 config.yaml 生成报告」
+#                 或:  python generate_report_v2.py --theme 合成生物学
+#
+# 想分析自己的主题？复制 themes/_template/ 并照着改，
+# 或者参考 config-新能源.yaml / config-量子计算.yaml。
+#
+# 深度层级: L0=一句话 / L1=一页纸 / L2=十页简报 / L3=深度报告 / L4=手册
+# 建议第一次跑 L1（一页纸，最快看到成果），再逐级加深。
+
+meta:
+  skill_version: "2.6"
+
+# === 报告主题 ===
+theme:
+  name: "合成生物学产业链分析"
+  id: "synthetic-biology"
+  description: "从基因合成、菌株工程、发酵设备到终端产品的全链条，覆盖美股/港股/A股/欧洲"
+
+# === 输出控制 ===
+output:
+  depth: "L1"            # L0/L1/L2/L3/L4 —— 新用户建议 L1
+  style: "专业投行风"      # 专业投行风/口语化风/路演PPT风/散户科普风
+  market_focus: "全球"     # 美股/A股/港股/中美双线/全球
+
+# === 数据路径 ===
+data_path: "themes/合成生物学/data/"
+
+# === 模块开关 ===
+modules:
+  enabled:
+    - "00-市场情绪分析"
+    - "01-市场环境扫描"
+    - "02-核心投资哲学"
+    - "03-产业链拆解"
+    - "04-铲子股筛选"
+    - "05-护城河评估"
+    - "06-催化剂日历"
+    - "08-风险矩阵与对冲"
+    - "09-组合构建"
+    - "14-深度核心逻辑摘要"
+    - "15-产业链全景图谱"
