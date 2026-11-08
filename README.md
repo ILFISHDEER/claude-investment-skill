@@ -1,15 +1,47 @@
-# Investment Skill 使用手册
+# Investment Skill — 用 AI 生成投行级产业链研究报告
 
+**一句话**：给 AI 一套模块化投研框架（17 个分析模块 × 5 级深度 × 4 种风格），它就能像研究员一样，从产业链拆解一路写到组合构建——行情数据自动拉取，方法论靠回测持续进化。
+
+[README (English)](./README_EN.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Powered by Claude](https://img.shields.io/badge/Powered_by-Claude-7C3AED.svg)](https://claude.com/claude-code)
 
 ---
 skill_version: 2.6
-last_updated: 2026-05-24
+last_updated: 2026-11-08
 ---
 
-## 快速开始
+**L1 输出长这样**（真实数据实拉生成，示例全文见 [examples/](examples/demo-L1-合成生物学.md)）：
+
+![L1 一页纸执行摘要示例](docs/images/demo-L1-report.png)
+
+## 它能回答什么问题
+
+- "合成生物学这条链上，铲子股该买谁？" → `03-产业链拆解` + `04-铲子股筛选`
+- "这家公司的护城河到底宽不宽？" → `05-护城河评估`（晨星评级框架嵌入）
+- "未来 6 个月该盯哪些催化剂？" → `06-催化剂日历`
+- "上次说的逻辑，后来市场买账了吗？" → `12-预测与实际对比`（回测驱动进化）
+- "中美两边各自卡位在哪？" → `07-中美对比矩阵` + `15-产业链全景图谱`
+
+## 30 秒上手
+
+```bash
+git clone git@github.com:ILFISHDEER/claude-investment-skill.git && cd claude-investment-skill
+pip install yfinance pyyaml requests
+python tv_data.py 合成生物学        # TradingView 实拉行情（国内直连可用）
+# 备选: python update_data.py 合成生物学   # Yahoo Finance 数据源
+```
+
+然后对 AI（Claude Code / 任意 Agent）说一句话：
+
+> 按 config.yaml 配置，生成投资分析报告
+
+或直接用脚本出报告骨架：`python generate_report_v2.py --theme 合成生物学`
+
+新用户建议从 **L1（一页纸）** 开始：最快看到成果，再逐级加深到 L3/L4。想分析自己的主题，复制 `themes/_template/` 照着改即可。
+
+## 快速开始（进阶配置）
 
 ### 第一步：配置
 
